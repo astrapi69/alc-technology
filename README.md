@@ -1,27 +1,74 @@
-# adaptive-learner-content-template
+# alc-technology
 
-[![content validation](https://github.com/astrapi69/adaptive-learner-content-template/actions/workflows/validate-content.yml/badge.svg)](https://github.com/astrapi69/adaptive-learner-content-template/actions/workflows/validate-content.yml)
+[![content validation](https://github.com/astrapi69/alc-technology/actions/workflows/validate-content.yml/badge.svg)](https://github.com/astrapi69/alc-technology/actions/workflows/validate-content.yml)
 [![engine on npm](https://img.shields.io/npm/v/learn-content-engine?label=engine%20on%20npm)](https://www.npmjs.com/package/learn-content-engine)
 
-A **GitHub template** for building your own [Adaptive Learner](https://github.com/astrapi69/adaptive-learner)
-content: a Git repository of plain lesson files that the app loads
-directly and no vendor can lock away.
+The [Adaptive Learner](https://github.com/astrapi69/adaptive-learner)
+content repository for **Technologie** (technology): a Git repository of
+plain lesson files that the app loads directly and no vendor can lock
+away.
 
-> Click **“Use this template” → Create a new repository** (not *Fork*) to
-> get a fresh, independent copy under your own account, then clone it.
+It ships two German-language knowledge sets (domain `technology`,
+`domain_label` Technologie) in ascending difficulty: an IT fundamentals
+course and an Ansible course for quality engineering. This repository
+was created from
+[adaptive-learner-content-template](https://github.com/astrapi69/adaptive-learner-content-template),
+which provides the schema mirror, validator, CI and authoring tooling
+described below.
 
-This template is the clean scaffold — schema, validator, CI, authoring
-templates, an AI generator, and **one** small example set. It ships **no**
-real content: you replace the example with your own.
+> **Herkunft:** Diese Sets lagen zuvor im offiziellen Content-Repo
+> [`adaptive-learner-content`](https://github.com/astrapi69/adaptive-learner-content)
+> und wurden in dieses eigenständige Content-Repo verschoben (siehe
+> `adaptive-learner-content#144`). Das `ansible-qe`-Duplikat aus
+> [`adaptive-learner-content-test`](https://github.com/astrapi69/adaptive-learner-content-test)
+> ist damit aufgelöst: Basis hier ist die kanonische Content-Version
+> (88 Karten), der Hint-Fix aus `content-test#65` ist übernommen.
+
+## Die Sets
+
+Zwei Sets, 18 Lektionen, Quell- und Zielsprache Deutsch. Empfohlene
+Reihenfolge:
+
+### Teil 1 — `sets/de/it-grundlagen` (A1, 10 Lektionen)
+
+| # | Lesson | Titel |
+|---|--------|-------|
+| 01 | `01-was-ist-ein-computer.json` | Was ist ein Computer? |
+| 02 | `02-betriebssysteme.json` | Betriebssysteme |
+| 03 | `03-netzwerk-grundlagen.json` | Netzwerk-Grundlagen |
+| 04 | `04-programmiersprachen-ueberblick.json` | Programmiersprachen Überblick |
+| 05 | `05-variablen-und-datentypen.json` | Variablen und Datentypen |
+| 06 | `06-kontrollstrukturen.json` | Kontrollstrukturen |
+| 07 | `07-datenbanken-grundbegriffe.json` | Datenbanken Grundbegriffe |
+| 08 | `08-versionsverwaltung.json` | Versionsverwaltung |
+| 09 | `09-web-grundlagen.json` | Web-Grundlagen |
+| 10 | `10-it-sicherheit-grundlagen.json` | IT-Sicherheit Grundlagen |
+
+### Teil 2 — `sets/de/ansible-qe` (B1, 8 Lektionen)
+
+| # | Lesson | Titel |
+|---|--------|-------|
+| 01 | `01-ansible-grundkonzepte.json` | Ansible-Grundkonzepte: Inventory, Playbooks, Module |
+| 02 | `02-yaml-syntax-playbook-struktur.json` | YAML-Syntax und Playbook-Struktur |
+| 03 | `03-ausfuehrungsmodell.json` | Ausführungsmodell: Task-Sequenzialität vs. Host-Parallelität |
+| 04 | `04-testing-module.json` | Testing-Module: assert, uri, command, shell |
+| 05 | `05-variablen-facts-bedingungen.json` | Variablen, Facts und Bedingungen |
+| 06 | `06-testumgebungen-aufsetzen-bereinigen.json` | Testumgebungen aufsetzen und bereinigen |
+| 07 | `07-inventory-gruppen-hosts-targeting.json` | Inventory-Gruppen und hosts-Targeting |
+| 08 | `08-handlers-jinja2-templates.json` | Handlers und Jinja2-Templates |
+
+Ergänzendes freies Material (Videos, Artikel) pro Domain steht in
+[`media.yaml`](media.yaml).
 
 ## What's inside
 
-- `manifest.yaml` — the root manifest listing your sets (one example set to start).
-- `sets/en/es-a1/` — one minimal, valid example lesson + its set manifest.
+- `manifest.yaml` — the root manifest listing the sets.
+- `sets/de/it-grundlagen/`, `sets/de/ansible-qe/` — the lesson sets.
+- `media.yaml` — free supplementary media per domain.
 - `schema/` — the pinned [`learn-content-engine`](https://github.com/astrapi69/learn-content-engine)
   schema mirror; [`engine-version.txt`](schema/engine-version.txt) holds the
-  pinned engine version (currently `0.12.0`) and is the source of truth. This
-  is what your content is validated against — independent of the app.
+  pinned engine version and is the source of truth. This is what the content
+  is validated against — independent of the app.
 - `templates/` — starting-point lessons per domain (language / programming / knowledge).
 - `scripts/validate_content.py` — the local validator.
 - `scripts/generate_exercises.py` — an optional BYOK AI exercise generator.
@@ -38,15 +85,12 @@ You only need `make` and `python3`. The first `make validate` sets up a
 local environment for you (no manual `pip`, no virtualenv, no Poetry):
 
 ```bash
-# 1. Use this template -> your own repo -> clone it
-git clone https://github.com/<you>/<your-content-repo>.git
-cd <your-content-repo>
+git clone https://github.com/astrapi69/alc-technology.git
+cd alc-technology
 
-# 2. Validate the example set. First run creates .venv and installs deps;
-#    later runs reuse it. Exit 0 == all sets pass.
+# Validate the sets. First run creates .venv and installs deps;
+# later runs reuse it. Exit 0 == all sets pass.
 make validate
-
-# 3. Replace the example with your own lesson, then re-run make validate + commit.
 ```
 
 Before you push, `make lint` runs the same semantic engine gate as CI
@@ -78,16 +122,17 @@ YAML (or JSON) file so an AI assistant or a human can review the whole
 set in one pass (syntax, correctness, consistency across lessons):
 
 ```bash
-python3 scripts/export_set.py es-a1 --lang en
-# -> exports/es-a1-en-<timestamp>.yaml
-python3 scripts/export_set.py es-a1 --lang en --format json --out /tmp/review.json
+python3 scripts/export_set.py ansible-qe
+# -> exports/ansible-qe-de-<timestamp>.yaml
+python3 scripts/export_set.py ansible-qe --format json --out /tmp/review.json
 ```
 
-The slug is the set id from the root `manifest.yaml` (`example-set`) or
-the folder name of the set path (`es-a1`); when the same folder name
-exists under several source-language directories, `--lang` (default
-`de`) picks the `sets/<lang>/` directory. Non-ASCII characters stay
-real UTF-8. An unknown slug aborts with a list of the available sets.
+The slug is the set id from the root `manifest.yaml`
+(`ansible-qe-from-de`) or the folder name of the set path
+(`ansible-qe`); when the same folder name exists under several
+source-language directories, `--lang` (default `de`) picks the
+`sets/<lang>/` directory. Non-ASCII characters stay real UTF-8. An
+unknown slug aborts with a list of the available sets.
 
 The export is self-contained: its first field `review_instructions`
 holds the complete review prompt from
@@ -137,8 +182,9 @@ on them directly (a runnable sample lives in
 lesson with a BYOK model (Anthropic / OpenAI / Gemini) and gates every
 draft through the validator before writing it into the `generated/`
 staging folder. It is language-focused (target and source differ). For a
-**knowledge set** (material written in the same language it teaches,
-source == target), the generator is not the right tool; hand-author from
+**knowledge set** like the ones in this repo (material written in the
+same language it teaches, source == target), the generator is not the
+right tool; hand-author from
 [`templates/knowledge/`](templates/knowledge/) instead.
 
 First set your provider key. It is read from the environment (BYOK) and
@@ -201,13 +247,12 @@ manifest, and re-run `make validate`.
 
 ## How it stays current
 
-Your content is validated against the **pinned** engine version in
+The content is validated against the **pinned** engine version in
 `schema/engine-version.txt` on every push and pull request (structural +
-semantic + drift gates in `.github/workflows/`). A green CI means your
+semantic + drift gates in `.github/workflows/`). A green CI means the
 content is valid for every consumer of that engine release. When the
 engine is bumped, it reaches this repository the same way it reaches the
 rest of the chain: a deliberate pin-bump PR that the drift gate guards.
 
-Background and prompt recipes: the blog post *Build Your Own Lessons for
-Adaptive Learner*. Licensed MIT (see [LICENSE](LICENSE)); your authored
-content may carry its own license via each set manifest's `metadata.license`.
+Licensed MIT (see [LICENSE](LICENSE)); the lesson content carries its own
+license via each set manifest's `metadata.license`.
