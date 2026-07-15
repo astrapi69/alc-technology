@@ -1,30 +1,73 @@
-# Root manifest — lists the sets your repository offers.
+# Wurzel-Manifest von alc-technology — die Technologie-Reihe.
 #
-# This template ships ONE example set (sets/en/es-a1). Replace it
-# with your own:
-#   - point `path` at your set directory (convention: sets/<source-lang>/<set-id>)
-#   - keep `lesson_count` honest (it must match the lessons you ship)
-#   - a set needs at least: id, title, target_language, level, version, lesson_count
+# Adaptive-Learner-Content-Repo für Technologie. Zwei deutschsprachige
+# Sets (domain: technology) nach aufsteigendem Niveau:
 #
-# `schema_version` is optional and not strict.
-# Validate everything with:  python3 scripts/validate_content.py
+#   it-grundlagen  IT-Grundlagen                              (A1, 10 Lektionen)
+#   ansible-qe     Ansible-Grundlagen für Quality Engineering (B1,  8 Lektionen)
+#
+# Vormals in astrapi69/adaptive-learner-content; in dieses eigenständige
+# Content-Repo ausgelagert (siehe adaptive-learner-content#144). Das
+# ansible-qe-Duplikat aus adaptive-learner-content-test ist damit
+# aufgelöst: Basis ist die kanonische Content-Version (88 Karten), der
+# Hint-Fix aus content-test#65 ist übernommen. Validieren mit:
+#
+#     python3 scripts/validate_content.py
+#     node scripts/validate_with_engine.mjs .
+#
+# Anleitung: docs/GETTING-STARTED.md
 schema_version: '1.5'
-name: My Adaptive Learner content
+name: Adaptive Learner — Technologie
 description: >-
-  A content repository created from adaptive-learner-content-template.
-  Replace this example set with your own lessons.
+  Technologie-Inhalte für Adaptive Learner: IT-Grundlagen für
+  Einsteiger und Ansible-Grundlagen für Quality Engineering, beide
+  auf Deutsch erklärt.
 sets:
-  - id: example-set
-    title: Spanish A1 (example)
-    title_native: Español A1 (ejemplo)
-    target_language: es
-    source_language: en
-    domain: language
+  - id: it-grundlagen-from-de
+    title: IT-Grundlagen
+    title_native: IT-Grundlagen
+    target_language: de
+    source_language: de
+    domain: technology
+    domain_label: Technologie
     level: A1
-    path: sets/en/es-a1
+    path: sets/de/it-grundlagen
     version: '1.0.0'
-    lesson_count: 1
+    lesson_count: 10
+    description: >-
+      Einführung in IT und Programmierung für Deutschsprachige
+      (10 Lektionen): von Hardware, Betriebssystemen und
+      Netzwerk-Grundlagen über Programmiersprachen, Variablen und
+      Kontrollstrukturen bis zu Datenbanken, Versionsverwaltung
+      (Git), Web-Grundlagen und IT-Sicherheit. Erklärt auf
+      Deutsch, mit den englischen Fachbegriffen in Klammern.
+      Sachthemen-Set (domain: technology).
     tags:
-      - example
-      - spanish
-      - a1
+      - beginner
+      - technology
+      - it
+  - id: ansible-qe-from-de
+    title: Ansible-Grundlagen für Quality Engineering
+    title_native: Ansible-Grundlagen für Quality Engineering
+    target_language: de
+    source_language: de
+    domain: technology
+    domain_label: Technologie
+    level: B1
+    path: sets/de/ansible-qe
+    version: '1.0.0'
+    lesson_count: 8
+    description: >-
+      Ansible für Quality Engineering, auf Deutsch (8 Lektionen):
+      Grundkonzepte, YAML/Playbook-Struktur, das Ausführungsmodell
+      (Task-Sequenzialität vs. Host-Parallelität), Testing-Module
+      (assert, uri, command, shell), Variablen/Facts/Bedingungen,
+      Testumgebungen aufsetzen und bereinigen, Inventory-Targeting
+      sowie Handlers und Jinja2-Templates. 88 Karten mit Theorie
+      und Übungen (matching, cloze, free_text, word_tiles).
+      Sachthemen-Set (domain: technology).
+    tags:
+      - ansible
+      - devops
+      - qa
+      - automation
