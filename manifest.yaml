@@ -29,7 +29,6 @@ sets:
     target_language: de
     source_language: de
     domain: technology
-    domain_label: Technologie
     level: A1
     path: sets/de/it-grundlagen
     version: '1.0.0'
@@ -52,7 +51,6 @@ sets:
     target_language: de
     source_language: de
     domain: technology
-    domain_label: Technologie
     level: B1
     path: sets/de/ansible-qe
     version: '1.0.0'
