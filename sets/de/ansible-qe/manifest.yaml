@@ -24,7 +24,6 @@ sets:
     path: sets/de/ansible-qe
     version: '1.0.0'
     lesson_count: 8
-    domain_label: Technologie
     description: >-
       Ansible für Quality Engineering: acht Lektionen mit insgesamt
       88 Karten, Theorieschritten und Übungen (matching, cloze,

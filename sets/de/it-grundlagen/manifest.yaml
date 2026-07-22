@@ -29,7 +29,6 @@ sets:
     path: sets/de/it-grundlagen
     version: '1.0.0'
     lesson_count: 10
-    domain_label: Technik
     description: >-
       Zehn Einführungslektionen in IT und Programmierung, auf
       Deutsch erklärt — von Hardware und Betriebssystemen bis zu
