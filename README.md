@@ -8,8 +8,7 @@ content repository for **Technologie** (technology): a Git repository of
 plain lesson files that the app loads directly and no vendor can lock
 away.
 
-It ships two German-language knowledge sets (domain `technology`,
-`domain_label` Technologie) in ascending difficulty: an IT fundamentals
+It ships two German-language knowledge sets (domain `technology`) in ascending difficulty: an IT fundamentals
 course and an Ansible course for quality engineering. This repository
 was created from
 [adaptive-learner-content-template](https://github.com/astrapi69/adaptive-learner-content-template),
@@ -29,7 +28,7 @@ described below.
 Zwei Sets, 18 Lektionen, Quell- und Zielsprache Deutsch. Empfohlene
 Reihenfolge:
 
-### Teil 1 — `sets/de/it-grundlagen` (A1, 10 Lektionen)
+### Teil 1: `sets/de/it-grundlagen` (A1, 10 Lektionen)
 
 | # | Lesson | Titel |
 |---|--------|-------|
@@ -44,7 +43,7 @@ Reihenfolge:
 | 09 | `09-web-grundlagen.json` | Web-Grundlagen |
 | 10 | `10-it-sicherheit-grundlagen.json` | IT-Sicherheit Grundlagen |
 
-### Teil 2 — `sets/de/ansible-qe` (B1, 8 Lektionen)
+### Teil 2: `sets/de/ansible-qe` (B1, 8 Lektionen)
 
 | # | Lesson | Titel |
 |---|--------|-------|
@@ -62,19 +61,19 @@ Ergänzendes freies Material (Videos, Artikel) pro Domain steht in
 
 ## What's inside
 
-- `manifest.yaml` — the root manifest listing the sets.
-- `sets/de/it-grundlagen/`, `sets/de/ansible-qe/` — the lesson sets.
-- `media.yaml` — free supplementary media per domain.
-- `schema/` — the pinned [`learn-content-engine`](https://github.com/astrapi69/learn-content-engine)
+- `manifest.yaml`: the root manifest listing the sets.
+- `sets/de/it-grundlagen/`, `sets/de/ansible-qe/`: the lesson sets.
+- `media.yaml`: free supplementary media per domain.
+- `schema/`: the pinned [`learn-content-engine`](https://github.com/astrapi69/learn-content-engine)
   schema mirror; [`engine-version.txt`](schema/engine-version.txt) holds the
   pinned engine version and is the source of truth. This is what the content
-  is validated against — independent of the app.
-- `templates/` — starting-point lessons per domain (language / programming / knowledge).
-- `scripts/validate_content.py` — the local validator.
-- `scripts/generate_exercises.py` — an optional BYOK AI exercise generator.
-- `generated/` — staging area for AI drafts (never shipped directly).
-- `.github/workflows/` — CI that validates every push/PR against the pinned engine.
-- `docs/` — [GETTING-STARTED.md](docs/GETTING-STARTED.md) and a local
+  is validated against, independent of the app.
+- `templates/`: starting-point lessons per domain (language / programming / knowledge).
+- `scripts/validate_content.py`: the local validator.
+- `scripts/generate_exercises.py`: an optional BYOK AI exercise generator.
+- `generated/`: staging area for AI drafts (never shipped directly).
+- `.github/workflows/`: CI that validates every push/PR against the pinned engine.
+- `docs/`: [GETTING-STARTED.md](docs/GETTING-STARTED.md) and a local
   [LESSON-FORMAT.md](docs/LESSON-FORMAT.md). The **canonical, test-validated**
   format reference is the engine's
   [`docs/lesson-format.md`](https://github.com/astrapi69/learn-content-engine/blob/main/docs/lesson-format.md).
@@ -100,7 +99,7 @@ and npm) and checks every lesson and manifest with the engine's rule ids
 (`E-CARD-REF` & co.). `make lint-warnings` additionally prints the engine gate's warnings (`W-*`).
 
 No `make` (e.g. Windows without WSL)? Two options: run the validator in a
-virtualenv yourself —
+virtualenv yourself:
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate     # Windows: .venv\Scripts\activate
@@ -108,7 +107,7 @@ pip install -r requirements.txt
 python3 scripts/validate_content.py
 ```
 
-— or just commit and let the GitHub Actions CI validate (it runs the same
+Or just commit and let the GitHub Actions CI validate (it runs the same
 checks). Installing the deps globally with a bare `pip install` fails on
 modern Debian/Ubuntu/macOS (PEP 668, "externally-managed-environment");
 the virtualenv above is why.
