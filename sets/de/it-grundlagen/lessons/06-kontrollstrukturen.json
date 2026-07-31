@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-kontrollstruktur",
+      "stable_id": "card-ms942cfh06aa8",
       "front": "Kontrollstruktur",
       "back": "Ein Sprachmittel, das den Ablauf eines Programms steuert — etwa Entscheidungen oder Wiederholungen.",
       "notes": "Die wichtigsten sind Verzweigungen (if/else) und Schleifen (for/while).",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-bedingung",
+      "stable_id": "card-ms942cfh06b3q",
       "front": "Bedingung (condition)",
       "back": "Ein Ausdruck, der entweder wahr oder falsch ist und den Ablauf steuert.",
       "notes": "Beispiel: alter >= 18. Je nach Ergebnis läuft das Programm anders weiter.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-boolescher-ausdruck",
+      "stable_id": "card-ms942cfh06cmu",
       "front": "Boolescher Ausdruck",
       "back": "Ein Ausdruck, der zu einem Wahrheitswert wahr (true) oder falsch (false) führt.",
       "notes": "Beispiel: 5 > 3 ergibt wahr. Vergleiche und logische Verknüpfungen liefern boolesche Werte.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-if",
+      "stable_id": "card-ms942cfh06dhb",
       "front": "if (wenn)",
       "back": "Führt einen Code-Block nur dann aus, wenn eine Bedingung wahr ist.",
       "notes": "Beispiel: wenn das Alter über 18 ist, dann gewähre Zugang.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-else",
+      "stable_id": "card-ms942cfh06ew7",
       "front": "else (sonst)",
       "back": "Führt einen Code-Block aus, wenn die if-Bedingung falsch ist.",
       "notes": "if und else bilden zusammen eine Entweder-oder-Entscheidung.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-verzweigung",
+      "stable_id": "card-ms942cfh06fay",
       "front": "Verzweigung",
       "back": "Eine Stelle im Programm, an der je nach Bedingung unterschiedliche Wege eingeschlagen werden.",
       "notes": "Typisch mit if/else umgesetzt.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-schleife",
+      "stable_id": "card-ms942cfh06g0b",
       "front": "Schleife (loop)",
       "back": "Eine Kontrollstruktur, die einen Code-Block mehrfach wiederholt.",
       "notes": "So muss man denselben Code nicht viele Male schreiben.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-for",
+      "stable_id": "card-ms942cfh06hqu",
       "front": "For-Schleife",
       "back": "Eine Schleife, die einen Block eine bestimmte, im Voraus bekannte Anzahl von Malen wiederholt.",
       "notes": "Beispiel: für jede Zahl von 1 bis 10 etwas tun.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-while",
+      "stable_id": "card-ms942cfh06i7h",
       "front": "While-Schleife",
       "back": "Eine Schleife, die einen Block wiederholt, solange eine Bedingung wahr bleibt.",
       "notes": "Achtung: Wird die Bedingung nie falsch, entsteht eine Endlosschleife.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-endlosschleife",
+      "stable_id": "card-ms942cfh06jeu",
       "front": "Endlosschleife",
       "back": "Eine Schleife, deren Bedingung nie falsch wird und die daher nie von selbst endet.",
       "notes": "Meist ein Fehler — das Programm 'hängt'.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-vergleichsoperator",
+      "stable_id": "card-ms942cfh06k5i",
       "front": "Vergleichsoperator",
       "back": "Ein Zeichen, das zwei Werte vergleicht und wahr oder falsch zurückgibt.",
       "notes": "Beispiele: ==, !=, <, >, <=, >=.",
@@ -127,6 +138,7 @@
       "title": "Kontrollstrukturen zuordnen",
       "exercise": {
         "id": "ex-match-kontroll",
+        "stable_id": "ex-ms942cfh06l58",
         "type": "matching",
         "prompt": "Ordne jeden Begriff der passenden Beschreibung zu.",
         "card_ids": ["it-if", "it-else", "it-for", "it-while"],
@@ -146,6 +158,7 @@
       "title": "Wahr oder falsch",
       "exercise": {
         "id": "ex-free-bedingung",
+        "stable_id": "ex-ms942cfh06mu5",
         "type": "free_text",
         "prompt": "Wie nennt man einen Ausdruck, der entweder wahr oder falsch ist und den Ablauf steuert?",
         "card_ids": ["it-bedingung"],
@@ -162,6 +175,7 @@
       "title": "Solange wahr",
       "exercise": {
         "id": "ex-cloze-while",
+        "stable_id": "ex-ms942cfh06ndx",
         "type": "cloze",
         "prompt": "Ergänze die Schleifenart.",
         "card_ids": ["it-while"],
@@ -178,6 +192,7 @@
       "title": "Mehrfaches Wiederholen",
       "exercise": {
         "id": "ex-free-schleife",
+        "stable_id": "ex-ms942cfh06onv",
         "type": "free_text",
         "prompt": "Wie heißt eine Kontrollstruktur, die einen Code-Block mehrfach wiederholt?",
         "card_ids": ["it-schleife"],
@@ -194,6 +209,7 @@
       "title": "If/Else in Worten",
       "exercise": {
         "id": "ex-tiles-if-else",
+        "stable_id": "ex-ms942cfh06ph8",
         "type": "word_tiles",
         "prompt": "Setze den Satz über eine Verzweigung zusammen.",
         "card_ids": ["it-if", "it-else"],
@@ -209,6 +225,7 @@
       "title": "Wenn es nie endet",
       "exercise": {
         "id": "ex-cloze-endlos",
+        "stable_id": "ex-ms942cfh06qa3",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für eine Schleife, die nie von selbst endet.",
         "card_ids": ["it-endlosschleife"],
@@ -225,6 +242,7 @@
       "title": "Bekannte Anzahl",
       "exercise": {
         "id": "ex-pick-for",
+        "stable_id": "ex-ms942cfh06rl6",
         "type": "picture_choice",
         "prompt": "Welche Schleife eignet sich, um etwas eine bekannte Anzahl von Malen zu wiederholen?",
         "card_ids": ["it-for", "it-while"],

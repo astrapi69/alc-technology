@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-netzwerk",
+      "stable_id": "card-ms942cff04q9i",
       "front": "Netzwerk (network)",
       "back": "Ein Verbund aus mehreren Computern, die miteinander Daten austauschen können.",
       "notes": "Das größte Netzwerk der Welt ist das Internet.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-internet",
+      "stable_id": "card-ms942cff04rca",
       "front": "Internet",
       "back": "Das weltweite Netzwerk, das unzählige kleinere Netzwerke miteinander verbindet.",
       "notes": "Das Web (WWW) ist nur ein Dienst, der über das Internet läuft.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-ip",
+      "stable_id": "card-ms942cff04scq",
       "front": "IP-Adresse",
       "back": "Eine eindeutige Adresse, mit der ein Gerät im Netzwerk angesprochen wird.",
       "notes": "Beispiel: 192.168.0.1. Sie funktioniert wie eine Postadresse für Computer.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-dns",
+      "stable_id": "card-ms942cff04tzo",
       "front": "DNS (Domain Name System)",
       "back": "Der Dienst, der Domainnamen in IP-Adressen übersetzt.",
       "notes": "Wie ein Telefonbuch: aus 'beispiel.de' wird eine IP-Adresse wie 93.184.216.34.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-domain",
+      "stable_id": "card-ms942cff04uus",
       "front": "Domain (Domainname)",
       "back": "Der gut merkbare Name einer Website, z. B. beispiel.de.",
       "notes": "DNS übersetzt die Domain in die zugehörige IP-Adresse.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-http",
+      "stable_id": "card-ms942cff04vo7",
       "front": "HTTP",
       "back": "Das Protokoll, mit dem Browser und Webserver Webseiten austauschen.",
       "notes": "HTTP steht für 'HyperText Transfer Protocol'.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-https",
+      "stable_id": "card-ms942cff04w68",
       "front": "HTTPS",
       "back": "Die verschlüsselte, sichere Variante von HTTP.",
       "notes": "Das 'S' steht für 'Secure'. Erkennbar am Schloss-Symbol im Browser.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-protokoll",
+      "stable_id": "card-ms942cff04xa1",
       "front": "Protokoll (protocol)",
       "back": "Ein vereinbarter Satz von Regeln, nach denen Geräte im Netzwerk kommunizieren.",
       "notes": "Beispiele: HTTP, HTTPS, FTP. Ohne gemeinsames Protokoll verstehen sich Geräte nicht.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-router",
+      "stable_id": "card-ms942cff04yr7",
       "front": "Router",
       "back": "Ein Gerät, das Datenpakete zwischen Netzwerken weiterleitet und den Weg zum Ziel bestimmt.",
       "notes": "Zu Hause verbindet der Router dein lokales Netzwerk mit dem Internet.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-server",
+      "stable_id": "card-ms942cff04zu2",
       "front": "Server",
       "back": "Ein Computer, der Dienste oder Daten bereitstellt und Anfragen von Clients beantwortet.",
       "notes": "Beispiel: ein Webserver liefert Webseiten aus.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-client",
+      "stable_id": "card-ms942cff050mz",
       "front": "Client",
       "back": "Ein Gerät oder Programm, das einen Dienst beim Server anfragt.",
       "notes": "Dein Browser ist ein Client, der Webseiten beim Server anfragt.",
@@ -108,6 +119,7 @@
     },
     {
       "id": "it-paket",
+      "stable_id": "card-ms942cff051pl",
       "front": "Datenpaket (packet)",
       "back": "Eine kleine Dateneinheit, in die Nachrichten für die Übertragung im Netzwerk zerlegt werden.",
       "notes": "Große Daten werden in viele Pakete aufgeteilt und beim Empfänger wieder zusammengesetzt.",
@@ -136,6 +148,7 @@
       "title": "Netzwerk-Begriffe zuordnen",
       "exercise": {
         "id": "ex-match-netzwerk",
+        "stable_id": "ex-ms942cff052fo",
         "type": "matching",
         "prompt": "Ordne jedem Begriff die passende Beschreibung zu.",
         "card_ids": ["it-server", "it-client", "it-router", "it-dns"],
@@ -155,6 +168,7 @@
       "title": "Adresse eines Geräts",
       "exercise": {
         "id": "ex-free-ip",
+        "stable_id": "ex-ms942cff053nn",
         "type": "free_text",
         "prompt": "Wie heißt die eindeutige Adresse, mit der ein Gerät im Netzwerk angesprochen wird?",
         "card_ids": ["it-ip"],
@@ -171,6 +185,7 @@
       "title": "Das Telefonbuch des Internets",
       "exercise": {
         "id": "ex-cloze-dns",
+        "stable_id": "ex-ms942cff054ku",
         "type": "cloze",
         "prompt": "Ergänze den Dienst, der Namen in IP-Adressen übersetzt.",
         "card_ids": ["it-dns"],
@@ -187,6 +202,7 @@
       "title": "Sicheres Web-Protokoll",
       "exercise": {
         "id": "ex-free-https",
+        "stable_id": "ex-ms942cff055oc",
         "type": "free_text",
         "prompt": "Wie heißt die verschlüsselte, sichere Variante von HTTP?",
         "card_ids": ["it-https"],
@@ -203,6 +219,7 @@
       "title": "Client und Server",
       "exercise": {
         "id": "ex-tiles-client-server",
+        "stable_id": "ex-ms942cff05606",
         "type": "word_tiles",
         "prompt": "Setze den Satz zusammen.",
         "card_ids": ["it-client", "it-server"],
@@ -218,6 +235,7 @@
       "title": "Pakete weiterleiten",
       "exercise": {
         "id": "ex-cloze-router",
+        "stable_id": "ex-ms942cff05797",
         "type": "cloze",
         "prompt": "Ergänze das Gerät, das Datenpakete weiterleitet.",
         "card_ids": ["it-router"],
@@ -234,6 +252,7 @@
       "title": "Verschlüsselte Verbindung erkennen",
       "exercise": {
         "id": "ex-pick-https",
+        "stable_id": "ex-ms942cff058yn",
         "type": "picture_choice",
         "prompt": "Welches Protokoll überträgt Webseiten verschlüsselt?",
         "card_ids": ["it-https", "it-http"],

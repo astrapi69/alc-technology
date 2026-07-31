@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-computer",
+      "stable_id": "card-ms942cfe03njk",
       "front": "Computer",
       "back": "Ein elektronisches Gerät, das Daten nach festgelegten Anweisungen (Programmen) verarbeitet, speichert und ausgibt.",
       "notes": "Beispiele: ein Laptop, ein Smartphone oder ein Server sind alle Computer.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-hardware",
+      "stable_id": "card-ms942cfe03oqv",
       "front": "Hardware",
       "back": "Alle physischen, anfassbaren Teile eines Computers — zum Beispiel Bildschirm, Tastatur und die Bauteile im Inneren.",
       "notes": "Gegenstück ist die Software: die Programme, die man nicht anfassen kann.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-cpu",
+      "stable_id": "card-ms942cfe03puw",
       "front": "Prozessor (CPU)",
       "back": "Das Rechenzentrum des Computers, das Anweisungen ausführt und Berechnungen durchführt.",
       "notes": "CPU steht für 'Central Processing Unit'. Man nennt sie oft das 'Gehirn' des Computers.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-ram",
+      "stable_id": "card-ms942cfe03qvy",
       "front": "Arbeitsspeicher (RAM)",
       "back": "Schneller, flüchtiger Speicher, in dem laufende Programme und ihre Daten kurzfristig liegen.",
       "notes": "RAM steht für 'Random Access Memory'. Beim Ausschalten geht der Inhalt verloren.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-festplatte",
+      "stable_id": "card-ms942cfe03r6q",
       "front": "Festplatte (hard disk)",
       "back": "Dauerhafter Massenspeicher, der Daten auch nach dem Ausschalten behält.",
       "notes": "Klassische Festplatten (HDD) haben rotierende Scheiben.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-ssd",
+      "stable_id": "card-ms942cfe03stf",
       "front": "SSD (Solid State Drive)",
       "back": "Ein moderner, sehr schneller Massenspeicher ohne bewegliche Teile.",
       "notes": "Eine SSD ist deutlich schneller als eine klassische Festplatte (HDD).",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-mainboard",
+      "stable_id": "card-ms942cfe03t1b",
       "front": "Mainboard (Motherboard)",
       "back": "Die zentrale Platine, die alle Bauteile des Computers miteinander verbindet.",
       "notes": "Auch 'Hauptplatine' genannt. Hier stecken CPU, RAM und weitere Komponenten.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-gpu",
+      "stable_id": "card-ms942cfe03un9",
       "front": "Grafikkarte (GPU)",
       "back": "Bauteil, das für die Berechnung und Ausgabe von Bildern und Grafik zuständig ist.",
       "notes": "GPU steht für 'Graphics Processing Unit'. Wichtig für Spiele, Videos und KI-Berechnungen.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-eingabe",
+      "stable_id": "card-ms942cfe03v9i",
       "front": "Eingabegerät (input device)",
       "back": "Gerät, mit dem der Mensch Daten in den Computer eingibt.",
       "notes": "Beispiele: Tastatur, Maus, Mikrofon, Scanner.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-ausgabe",
+      "stable_id": "card-ms942cfe03w7y",
       "front": "Ausgabegerät (output device)",
       "back": "Gerät, das Daten des Computers für den Menschen darstellt.",
       "notes": "Beispiele: Bildschirm, Drucker, Lautsprecher.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-software",
+      "stable_id": "card-ms942cfe03x88",
       "front": "Software",
       "back": "Die Programme und Daten eines Computers, die man nicht anfassen kann.",
       "notes": "Software steuert die Hardware. Beispiel: ein Textprogramm oder ein Browser.",
@@ -108,6 +119,7 @@
     },
     {
       "id": "it-bit",
+      "stable_id": "card-ms942cfe03yfi",
       "front": "Bit",
       "back": "Die kleinste Informationseinheit im Computer — sie hat den Wert 0 oder 1.",
       "notes": "8 Bit ergeben 1 Byte. Computer rechnen intern nur mit 0 und 1 (binär).",
@@ -136,6 +148,7 @@
       "title": "Bauteile zuordnen",
       "exercise": {
         "id": "ex-match-bauteile",
+        "stable_id": "ex-ms942cfe03z3c",
         "type": "matching",
         "prompt": "Ordne jedem Bauteil seine Aufgabe zu.",
         "card_ids": ["it-cpu", "it-ram", "it-festplatte", "it-mainboard", "it-gpu"],
@@ -156,6 +169,7 @@
       "title": "Das Gehirn des Computers",
       "exercise": {
         "id": "ex-free-cpu",
+        "stable_id": "ex-ms942cfe040x6",
         "type": "free_text",
         "prompt": "Wie heißt das Bauteil, das rechnet und Anweisungen ausführt — oft das 'Gehirn' des Computers genannt?",
         "card_ids": ["it-cpu"],
@@ -172,6 +186,7 @@
       "title": "Flüchtiger Speicher",
       "exercise": {
         "id": "ex-cloze-ram",
+        "stable_id": "ex-ms942cfe041fm",
         "type": "cloze",
         "prompt": "Ergänze den Namen des flüchtigen Speichers.",
         "card_ids": ["it-ram"],
@@ -188,6 +203,7 @@
       "title": "Anfassbare Teile",
       "exercise": {
         "id": "ex-free-hardware",
+        "stable_id": "ex-ms942cfe0420f",
         "type": "free_text",
         "prompt": "Wie nennt man alle anfassbaren, physischen Teile eines Computers?",
         "card_ids": ["it-hardware"],
@@ -204,6 +220,7 @@
       "title": "Definition zusammensetzen",
       "exercise": {
         "id": "ex-tiles-cpu-def",
+        "stable_id": "ex-ms942cfe0431n",
         "type": "word_tiles",
         "prompt": "Setze die Definition der CPU zusammen.",
         "card_ids": ["it-cpu"],
@@ -219,6 +236,7 @@
       "title": "Eingabegerät erkennen",
       "exercise": {
         "id": "ex-pick-ein-ausgabe",
+        "stable_id": "ex-ms942cfe044ka",
         "type": "picture_choice",
         "prompt": "Welches Gerät ist ein Eingabegerät?",
         "card_ids": ["it-eingabe", "it-ausgabe"],
@@ -240,6 +258,7 @@
       "title": "Die kleinste Einheit",
       "exercise": {
         "id": "ex-cloze-bit",
+        "stable_id": "ex-ms942cfe045ss",
         "type": "cloze",
         "prompt": "Ergänze die kleinste Informationseinheit.",
         "card_ids": ["it-bit"],

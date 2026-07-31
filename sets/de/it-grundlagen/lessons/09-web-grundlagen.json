@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-web",
+      "stable_id": "card-ms942cfi07sak",
       "front": "Web (WWW)",
       "back": "Der Dienst aus untereinander verlinkten Webseiten, der über das Internet erreichbar ist.",
       "notes": "WWW steht für 'World Wide Web'. Das Web läuft auf dem Internet, ist aber nicht dasselbe.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-webseite",
+      "stable_id": "card-ms942cfi07tnz",
       "front": "Webseite (web page)",
       "back": "Ein einzelnes Dokument im Web, das im Browser angezeigt wird.",
       "notes": "Mehrere zusammengehörige Webseiten bilden eine Website.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-browser",
+      "stable_id": "card-ms942cfi07u08",
       "front": "Browser",
       "back": "Ein Programm, das Webseiten herunterlädt, darstellt und bedienbar macht.",
       "notes": "Beispiele: Firefox, Chrome, Safari, Edge.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-url",
+      "stable_id": "card-ms942cfi07v8x",
       "front": "URL",
       "back": "Die vollständige Adresse, unter der eine Ressource im Web erreichbar ist.",
       "notes": "URL steht für 'Uniform Resource Locator'. Beispiel: https://beispiel.de/seite.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-html",
+      "stable_id": "card-ms942cfi07w48",
       "front": "HTML",
       "back": "Die Auszeichnungssprache, die die Struktur und den Inhalt einer Webseite festlegt.",
       "notes": "HTML steht für 'HyperText Markup Language'. Es bildet das Gerüst der Seite.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-css",
+      "stable_id": "card-ms942cfi07x8d",
       "front": "CSS",
       "back": "Die Sprache, die das Aussehen einer Webseite gestaltet — Farben, Schriften und Layout.",
       "notes": "CSS steht für 'Cascading Style Sheets'. Es ist für das Design zuständig.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-javascript",
+      "stable_id": "card-ms942cfi07yxm",
       "front": "JavaScript",
       "back": "Die Programmiersprache, die Webseiten interaktiv und dynamisch macht.",
       "notes": "Läuft im Browser. Achtung: JavaScript hat nichts mit Java zu tun.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-frontend",
+      "stable_id": "card-ms942cfi07z4r",
       "front": "Frontend",
       "back": "Der Teil einer Anwendung, den der Nutzer sieht und bedient — die Oberfläche im Browser.",
       "notes": "Wird vor allem mit HTML, CSS und JavaScript gebaut.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-backend",
+      "stable_id": "card-ms942cfi08023",
       "front": "Backend",
       "back": "Der Teil einer Anwendung, der im Hintergrund auf dem Server läuft und Daten verarbeitet.",
       "notes": "Hier liegen z. B. Datenbank-Zugriffe und die Geschäftslogik.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-hyperlink",
+      "stable_id": "card-ms942cfi08180",
       "front": "Hyperlink (Link)",
       "back": "Ein anklickbarer Verweis, der zu einer anderen Webseite oder Stelle führt.",
       "notes": "Links verbinden die Webseiten zu einem Netz — daher der Name 'Web'.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-webserver",
+      "stable_id": "card-ms942cfi0822y",
       "front": "Webserver",
       "back": "Ein Server, der Webseiten speichert und auf Anfrage an Browser ausliefert.",
       "notes": "Der Browser (Client) fragt an, der Webserver antwortet.",
@@ -127,6 +138,7 @@
       "title": "Web-Sprachen zuordnen",
       "exercise": {
         "id": "ex-match-web",
+        "stable_id": "ex-ms942cfi0835z",
         "type": "matching",
         "prompt": "Ordne jede Sprache ihrer Aufgabe zu.",
         "card_ids": ["it-html", "it-css", "it-javascript", "it-browser"],
@@ -146,6 +158,7 @@
       "title": "Das Aussehen gestalten",
       "exercise": {
         "id": "ex-free-css",
+        "stable_id": "ex-ms942cfi0848p",
         "type": "free_text",
         "prompt": "Welche Sprache gestaltet das Aussehen einer Webseite (Farben, Schrift, Layout)?",
         "card_ids": ["it-css"],
@@ -162,6 +175,7 @@
       "title": "Das Gerüst der Seite",
       "exercise": {
         "id": "ex-cloze-html",
+        "stable_id": "ex-ms942cfi085oy",
         "type": "cloze",
         "prompt": "Ergänze die Sprache für Struktur und Inhalt.",
         "card_ids": ["it-html"],
@@ -178,6 +192,7 @@
       "title": "Die Web-Adresse",
       "exercise": {
         "id": "ex-free-url",
+        "stable_id": "ex-ms942cfi0869k",
         "type": "free_text",
         "prompt": "Wie heißt die vollständige Adresse einer Ressource im Web?",
         "card_ids": ["it-url"],
@@ -194,6 +209,7 @@
       "title": "Frontend und Backend",
       "exercise": {
         "id": "ex-tiles-frontend-backend",
+        "stable_id": "ex-ms942cfi087z3",
         "type": "word_tiles",
         "prompt": "Setze den Satz zusammen.",
         "card_ids": ["it-frontend", "it-backend"],
@@ -209,6 +225,7 @@
       "title": "Interaktive Seiten",
       "exercise": {
         "id": "ex-cloze-javascript",
+        "stable_id": "ex-ms942cfi0889i",
         "type": "cloze",
         "prompt": "Ergänze die Sprache, die Webseiten interaktiv macht.",
         "card_ids": ["it-javascript"],
@@ -225,6 +242,7 @@
       "title": "Was der Nutzer sieht",
       "exercise": {
         "id": "ex-pick-frontend",
+        "stable_id": "ex-ms942cfi0892w",
         "type": "picture_choice",
         "prompt": "Welcher Teil einer Anwendung ist das, was der Nutzer sieht und bedient?",
         "card_ids": ["it-frontend", "it-backend"],

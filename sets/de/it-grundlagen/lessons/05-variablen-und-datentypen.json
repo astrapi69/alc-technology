@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-variable",
+      "stable_id": "card-ms942cfg05sf6",
       "front": "Variable",
       "back": "Ein benannter Behälter, in dem ein Programm einen Wert speichert und später wieder verwendet.",
       "notes": "Beispiel: alter = 30. Der Name ist 'alter', der Wert ist 30.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-wert",
+      "stable_id": "card-ms942cfg05tvk",
       "front": "Wert (value)",
       "back": "Der konkrete Inhalt, der in einer Variablen gespeichert ist.",
       "notes": "Bei alter = 30 ist 30 der Wert.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-datentyp",
+      "stable_id": "card-ms942cfg05uqa",
       "front": "Datentyp (data type)",
       "back": "Die Art eines Wertes, die festlegt, was man damit tun kann — z. B. Zahl oder Text.",
       "notes": "Mit Zahlen kann man rechnen, mit Text nicht.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-integer",
+      "stable_id": "card-ms942cfg05v1w",
       "front": "Integer (int)",
       "back": "Ein Datentyp für ganze Zahlen ohne Nachkommastellen.",
       "notes": "Beispiele: 0, 7, -42. 'Integer' ist Englisch/Latein für 'ganze Zahl'.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-float",
+      "stable_id": "card-ms942cfg05ws8",
       "front": "Float (Gleitkommazahl)",
       "back": "Ein Datentyp für Zahlen mit Nachkommastellen.",
       "notes": "Beispiele: 3.14, -0.5. Der Punkt trennt die Nachkommastellen.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-string-typ",
+      "stable_id": "card-ms942cfg05xs7",
       "front": "String (str)",
       "back": "Ein Datentyp für Text — eine Zeichenkette, die in Anführungszeichen steht.",
       "notes": "Beispiel: 'Hallo'. 'String' heißt wörtlich 'Kette' (von Zeichen).",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-boolean",
+      "stable_id": "card-ms942cfg05y06",
       "front": "Boolean (bool)",
       "back": "Ein Datentyp mit nur zwei möglichen Werten: wahr (true) oder falsch (false).",
       "notes": "Benannt nach dem Mathematiker George Boole. Wichtig für Bedingungen.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-zuweisung",
+      "stable_id": "card-ms942cfg05zer",
       "front": "Zuweisung (assignment)",
       "back": "Das Speichern eines Wertes in einer Variablen, meist mit dem Gleichheitszeichen =.",
       "notes": "Beispiel: name = 'Anna' weist der Variablen 'name' den Wert 'Anna' zu.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-variablenname",
+      "stable_id": "card-ms942cfg060hm",
       "front": "Variablenname",
       "back": "Der frei gewählte Name, über den man eine Variable anspricht.",
       "notes": "Gute Namen sind aussagekräftig, z. B. 'benutzername' statt 'x'.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-konstante",
+      "stable_id": "card-ms942cfg061db",
       "front": "Konstante (constant)",
       "back": "Ein benannter Wert, der sich während des Programmlaufs nicht ändern soll.",
       "notes": "Gegenstück zur Variablen, deren Wert sich ändern darf.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-typumwandlung",
+      "stable_id": "card-ms942cfg0625h",
       "front": "Typumwandlung (type conversion)",
       "back": "Das Umwandeln eines Wertes von einem Datentyp in einen anderen.",
       "notes": "Beispiel: aus dem Text '5' die Zahl 5 machen, um damit zu rechnen.",
@@ -127,6 +138,7 @@
       "title": "Datentypen zuordnen",
       "exercise": {
         "id": "ex-match-datentypen",
+        "stable_id": "ex-ms942cfg0638x",
         "type": "matching",
         "prompt": "Ordne jedem Datentyp die passende Beschreibung zu.",
         "card_ids": ["it-integer", "it-float", "it-string-typ", "it-boolean"],
@@ -146,6 +158,7 @@
       "title": "Der benannte Behälter",
       "exercise": {
         "id": "ex-free-variable",
+        "stable_id": "ex-ms942cfg0641m",
         "type": "free_text",
         "prompt": "Wie heißt der benannte Behälter, in dem ein Programm einen Wert speichert?",
         "card_ids": ["it-variable"],
@@ -162,6 +175,7 @@
       "title": "Ganze Zahlen",
       "exercise": {
         "id": "ex-cloze-integer",
+        "stable_id": "ex-ms942cfg065b2",
         "type": "cloze",
         "prompt": "Ergänze den Datentyp für ganze Zahlen.",
         "card_ids": ["it-integer"],
@@ -178,6 +192,7 @@
       "title": "Wahr oder falsch",
       "exercise": {
         "id": "ex-free-boolean",
+        "stable_id": "ex-ms942cfg066t6",
         "type": "free_text",
         "prompt": "Wie heißt der Datentyp mit nur zwei Werten: wahr oder falsch?",
         "card_ids": ["it-boolean"],
@@ -194,6 +209,7 @@
       "title": "Eine Zuweisung",
       "exercise": {
         "id": "ex-tiles-zuweisung",
+        "stable_id": "ex-ms942cfg067u5",
         "type": "word_tiles",
         "prompt": "Setze die Zuweisung zusammen, die der Variablen 'alter' den Wert 30 gibt.",
         "card_ids": ["it-zuweisung"],
@@ -209,6 +225,7 @@
       "title": "Text speichern",
       "exercise": {
         "id": "ex-cloze-string",
+        "stable_id": "ex-ms942cfg068jr",
         "type": "cloze",
         "prompt": "Ergänze den Datentyp für Text.",
         "card_ids": ["it-string-typ"],
@@ -225,6 +242,7 @@
       "title": "Zahl mit Komma",
       "exercise": {
         "id": "ex-pick-float",
+        "stable_id": "ex-ms942cfg069ng",
         "type": "picture_choice",
         "prompt": "Welcher Datentyp speichert eine Zahl wie 3.14 mit Nachkommastellen?",
         "card_ids": ["it-float", "it-integer"],

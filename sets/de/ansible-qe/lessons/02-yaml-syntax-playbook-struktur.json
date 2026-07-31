@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "card-01",
+      "stable_id": "card-ms942cfa00hft",
       "front": "YAML",
       "back": "Menschenlesbares Datenformat, das Ansible für Playbooks nutzt",
       "notes": "Struktur entsteht durch Einrückung, nicht durch Klammern.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "card-02",
+      "stable_id": "card-ms942cfa00izp",
       "front": "Einrückung in YAML",
       "back": "Nur Leerzeichen, keine Tabs; gleiche Ebene = gleiche Einrückung",
       "notes": "Falsche Einrückung ist der häufigste YAML-Fehler.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "card-03",
+      "stable_id": "card-ms942cfa00jj0",
       "front": "Listeneintrag in YAML",
       "back": "Beginnt mit einem Bindestrich und einem Leerzeichen: '- '",
       "notes": "Mehrere Plays oder Tasks bilden eine Liste.",
@@ -38,6 +41,7 @@
     },
     {
       "id": "card-04",
+      "stable_id": "card-ms942cfa00kk6",
       "front": "Schlüssel-Wert-Paar (Mapping)",
       "back": "Schlüssel, Doppelpunkt, Leerzeichen, Wert: 'name: Wert'",
       "notes": "Das Leerzeichen nach dem Doppelpunkt ist Pflicht.",
@@ -49,6 +53,7 @@
     },
     {
       "id": "card-05",
+      "stable_id": "card-ms942cfa00lbv",
       "front": "--- (Dokumentbeginn)",
       "back": "Drei Bindestriche markieren optional den Start eines YAML-Dokuments",
       "notes": "Steht ganz oben in vielen Playbooks.",
@@ -58,6 +63,7 @@
     },
     {
       "id": "card-06",
+      "stable_id": "card-ms942cfa00mja",
       "front": "hosts (im Play)",
       "back": "Schlüssel, der angibt, auf welche Gruppe oder Hosts das Play wirkt",
       "notes": "z. B. hosts: webserver oder hosts: all",
@@ -67,6 +73,7 @@
     },
     {
       "id": "card-07",
+      "stable_id": "card-ms942cfa00ng6",
       "front": "tasks (im Play)",
       "back": "Liste der Schritte, die nacheinander abgearbeitet werden",
       "notes": "Jeder Eintrag ist ein Task mit einem Modulaufruf.",
@@ -76,6 +83,7 @@
     },
     {
       "id": "card-08",
+      "stable_id": "card-ms942cfa00ox1",
       "front": "name (eines Tasks)",
       "back": "Freitext-Beschreibung, die in der Ausgabe angezeigt wird",
       "notes": "Optional, aber für lesbare Logs dringend empfohlen.",
@@ -85,6 +93,7 @@
     },
     {
       "id": "card-09",
+      "stable_id": "card-ms942cfa00pcf",
       "front": "Modulparameter",
       "back": "Schlüssel-Wert-Paare unter dem Modulnamen, die dessen Verhalten steuern",
       "notes": "z. B. für copy: src und dest.",
@@ -94,6 +103,7 @@
     },
     {
       "id": "card-10",
+      "stable_id": "card-ms942cfa00qql",
       "front": "become",
       "back": "Aktiviert Rechteausweitung (z. B. sudo) für privilegierte Tasks",
       "notes": "become: true ist nötig, um z. B. Pakete zu installieren.",
@@ -103,6 +113,7 @@
     },
     {
       "id": "card-11",
+      "stable_id": "card-ms942cfa00ri4",
       "front": "ansible-lint / --syntax-check",
       "back": "Werkzeuge, die ein Playbook auf Syntax- und Stilfehler prüfen",
       "notes": "ansible-playbook --syntax-check site.yml findet YAML-Fehler vor dem Lauf.",
@@ -132,6 +143,7 @@
       "title": "Schlüssel-Wert-Paar vervollständigen",
       "exercise": {
         "id": "ex-cloze-mapping",
+        "stable_id": "ex-ms942cfa00s2c",
         "type": "cloze",
         "prompt": "Ergänze das fehlende Zeichen, sodass ein gültiges YAML-Mapping entsteht.",
         "card_ids": ["card-04"],
@@ -147,6 +159,7 @@
       "title": "Play-Ziel ergänzen",
       "exercise": {
         "id": "ex-cloze-hosts",
+        "stable_id": "ex-ms942cfa00tdt",
         "type": "cloze",
         "prompt": "Ergänze den Schlüssel, der angibt, auf welche Gruppe das Play wirkt.",
         "card_ids": ["card-06", "card-07"],
@@ -162,6 +175,7 @@
       "title": "Playbook-Elemente",
       "exercise": {
         "id": "ex-match-struktur",
+        "stable_id": "ex-ms942cfa00uqe",
         "type": "matching",
         "prompt": "Ordne jedem Element seine Bedeutung zu.",
         "card_ids": ["card-06", "card-07", "card-08", "card-10"],
@@ -180,6 +194,7 @@
       "title": "YAML-Syntax",
       "exercise": {
         "id": "ex-match-yaml",
+        "stable_id": "ex-ms942cfa00vvg",
         "type": "matching",
         "prompt": "Ordne jedem Syntax-Element seine Regel zu.",
         "card_ids": ["card-02", "card-03", "card-04", "card-05"],
@@ -198,6 +213,7 @@
       "title": "Häufiger YAML-Fehler",
       "exercise": {
         "id": "ex-free-tabs",
+        "stable_id": "ex-ms942cfa00wp9",
         "type": "free_text",
         "prompt": "Womit darf in YAML NICHT eingerückt werden? Nenne das Zeichen/die Taste.",
         "card_ids": ["card-02"],
@@ -213,6 +229,7 @@
       "title": "Task-Zeile zusammensetzen",
       "exercise": {
         "id": "ex-tiles-task",
+        "stable_id": "ex-ms942cfa00xx6",
         "type": "word_tiles",
         "prompt": "Setze die Task-Beschriftungszeile korrekt zusammen.",
         "card_ids": ["card-08"],

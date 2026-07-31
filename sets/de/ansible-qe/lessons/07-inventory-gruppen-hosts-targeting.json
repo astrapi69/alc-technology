@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "card-01",
+      "stable_id": "card-ms942cfd02qvc",
       "front": "Gruppe (im Inventory)",
       "back": "Benannte Sammlung von Hosts, in INI mit [gruppenname] eingeleitet",
       "notes": "z. B. [webserver] mit mehreren Host-Zeilen darunter.",
@@ -20,6 +21,7 @@
     },
     {
       "id": "card-02",
+      "stable_id": "card-ms942cfd02r3h",
       "front": "all",
       "back": "Spezialgruppe, die automatisch alle Hosts des Inventory enthält",
       "notes": "hosts: all wirkt auf jeden Host.",
@@ -29,6 +31,7 @@
     },
     {
       "id": "card-03",
+      "stable_id": "card-ms942cfd02syd",
       "front": "children",
       "back": "Macht Gruppen zu Untergruppen einer übergeordneten Gruppe",
       "notes": "[produktion:children] listet andere Gruppennamen, nicht Hosts.",
@@ -40,6 +43,7 @@
     },
     {
       "id": "card-04",
+      "stable_id": "card-ms942cfd02t0o",
       "front": "Verschachtelte Gruppen",
       "back": "Eine Gruppe kann andere Gruppen enthalten, deren Hosts sie miterbt",
       "notes": "produktion erbt alle Hosts von webserver und datenbank.",
@@ -49,6 +53,7 @@
     },
     {
       "id": "card-05",
+      "stable_id": "card-ms942cfd02uy4",
       "front": "hosts:-Zeile",
       "back": "Im Play das Ziel: ein Hostname, ein Gruppenname oder ein Pattern",
       "notes": "Bestimmt, auf welche Maschinen das Play angewendet wird.",
@@ -58,6 +63,7 @@
     },
     {
       "id": "card-06",
+      "stable_id": "card-ms942cfd02vyy",
       "front": "Pattern mit :",
       "back": "Verknüpft mehrere Gruppen, z. B. 'webserver:datenbank' (Vereinigung)",
       "notes": "Der Doppelpunkt bedeutet ODER (Vereinigungsmenge).",
@@ -67,6 +73,7 @@
     },
     {
       "id": "card-07",
+      "stable_id": "card-ms942cfd02wjn",
       "front": "Ausschluss mit :!",
       "back": "Schließt eine Gruppe aus, z. B. 'all:!datenbank' (alle außer datenbank)",
       "notes": "Das Ausrufezeichen negiert.",
@@ -76,6 +83,7 @@
     },
     {
       "id": "card-08",
+      "stable_id": "card-ms942cfd02xs1",
       "front": "Schnittmenge mit :&",
       "back": "Nur Hosts in beiden Gruppen, z. B. 'webserver:&produktion'",
       "notes": "Das Und-Zeichen bildet die Schnittmenge.",
@@ -85,6 +93,7 @@
     },
     {
       "id": "card-09",
+      "stable_id": "card-ms942cfd02yf5",
       "front": "--limit (-l)",
       "back": "Beschränkt einen Lauf zur Laufzeit auf bestimmte Hosts/Gruppen",
       "notes": "ansible-playbook site.yml --limit web1 testet nur einen Host.",
@@ -96,6 +105,7 @@
     },
     {
       "id": "card-10",
+      "stable_id": "card-ms942cfd02zp3",
       "front": "group_vars",
       "back": "Verzeichnis/Datei für Variablen, die für eine ganze Gruppe gelten",
       "notes": "group_vars/webserver.yml setzt Werte für alle Webserver.",
@@ -105,6 +115,7 @@
     },
     {
       "id": "card-11",
+      "stable_id": "card-ms942cfd030uo",
       "front": "ansible-inventory --graph",
       "back": "Zeigt die Gruppen-/Host-Hierarchie als Baum an",
       "notes": "Hilft, verschachtelte Inventories zu überprüfen.",
@@ -134,6 +145,7 @@
       "title": "Untergruppen deklarieren",
       "exercise": {
         "id": "ex-cloze-children",
+        "stable_id": "ex-ms942cfd031tl",
         "type": "cloze",
         "prompt": "Ergänze das Schlüsselwort, das webserver und datenbank zu Untergruppen von produktion macht.",
         "card_ids": ["card-03"],
@@ -149,6 +161,7 @@
       "title": "Targeting-Patterns",
       "exercise": {
         "id": "ex-match-pattern",
+        "stable_id": "ex-ms942cfd032ve",
         "type": "matching",
         "prompt": "Ordne jedem Pattern seine Bedeutung zu.",
         "card_ids": ["card-02", "card-06", "card-07", "card-08"],
@@ -167,6 +180,7 @@
       "title": "Inventory-Begriffe",
       "exercise": {
         "id": "ex-match-begriffe",
+        "stable_id": "ex-ms942cfd033s8",
         "type": "matching",
         "prompt": "Ordne jedem Begriff die passende Beschreibung zu.",
         "card_ids": ["card-01", "card-04", "card-09", "card-10"],
@@ -185,6 +199,7 @@
       "title": "Nur einen Host testen",
       "exercise": {
         "id": "ex-free-limit",
+        "stable_id": "ex-ms942cfd034qb",
         "type": "free_text",
         "prompt": "Welche Kommandozeilen-Option beschränkt einen Playbook-Lauf auf einen einzelnen Host, ohne das Inventory zu ändern?",
         "card_ids": ["card-09"],
@@ -200,6 +215,7 @@
       "title": "Alle Hosts ansprechen",
       "exercise": {
         "id": "ex-free-all",
+        "stable_id": "ex-ms942cfd03508",
         "type": "free_text",
         "prompt": "Welchen Gruppennamen schreibst du in die hosts:-Zeile, um ALLE Hosts des Inventory anzusprechen?",
         "card_ids": ["card-02", "card-05"],

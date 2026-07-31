@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "card-01",
+      "stable_id": "card-ms942cfe036p2",
       "front": "Handler",
       "back": "Spezieller Task, der nur auf Benachrichtigung (notify) hin ausgeführt wird",
       "notes": "Typisch: einen Dienst neu starten, nachdem sich die Konfiguration geändert hat.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "card-02",
+      "stable_id": "card-ms942cfe037sw",
       "front": "notify",
       "back": "Löst einen Handler aus, aber NUR wenn der Task den Status 'changed' meldet",
       "notes": "Bleibt der Task 'ok', wird der Handler nicht ausgelöst.",
@@ -29,6 +31,7 @@
     },
     {
       "id": "card-03",
+      "stable_id": "card-ms942cfe03878",
       "front": "handlers (Abschnitt)",
       "back": "Eigener Abschnitt im Play, in dem die Handler definiert werden",
       "notes": "Der Handler-Name muss exakt dem notify-Wert entsprechen.",
@@ -38,6 +41,7 @@
     },
     {
       "id": "card-04",
+      "stable_id": "card-ms942cfe039yb",
       "front": "Wann laufen Handler?",
       "back": "Gesammelt am Ende des Plays, jeder höchstens einmal",
       "notes": "Mehrfache notifys desselben Handlers führen zu einem einzigen Lauf.",
@@ -47,6 +51,7 @@
     },
     {
       "id": "card-05",
+      "stable_id": "card-ms942cfe03amy",
       "front": "template",
       "back": "Modul, das eine Jinja2-Vorlage rendert und als Datei auf den Host schreibt",
       "notes": "Wie copy, aber mit Variablen-Ersetzung beim Schreiben.",
@@ -58,6 +63,7 @@
     },
     {
       "id": "card-06",
+      "stable_id": "card-ms942cfe03bj3",
       "front": ".j2-Endung",
       "back": "Übliche Dateiendung für Jinja2-Templates",
       "notes": "z. B. nginx.conf.j2",
@@ -67,6 +73,7 @@
     },
     {
       "id": "card-07",
+      "stable_id": "card-ms942cfe03c9s",
       "front": "Jinja2-Variable",
       "back": "Wird im Template mit {{ ... }} eingesetzt",
       "notes": "z. B. listen {{ app_port }};",
@@ -78,6 +85,7 @@
     },
     {
       "id": "card-08",
+      "stable_id": "card-ms942cfe03d6t",
       "front": "Jinja2-Schleife",
       "back": "{% for x in liste %} ... {% endfor %} wiederholt einen Block",
       "notes": "Mit {% %} stehen Steueranweisungen (Logik), mit {{ }} Ausgaben.",
@@ -89,6 +97,7 @@
     },
     {
       "id": "card-09",
+      "stable_id": "card-ms942cfe03e97",
       "front": "Jinja2-Bedingung",
       "back": "{% if bedingung %} ... {% endif %} gibt einen Block nur bedingt aus",
       "notes": "Erlaubt unterschiedliche Konfigurationen je Umgebung.",
@@ -100,6 +109,7 @@
     },
     {
       "id": "card-10",
+      "stable_id": "card-ms942cfe03fav",
       "front": "{{ }} vs. {% %}",
       "back": "{{ }} gibt einen Wert aus; {% %} steuert die Logik (for, if)",
       "notes": "Der häufigste Verwechslungsfehler in Templates.",
@@ -109,6 +119,7 @@
     },
     {
       "id": "card-11",
+      "stable_id": "card-ms942cfe03gmh",
       "front": "template vs. copy",
       "back": "copy überträgt eine Datei unverändert; template ersetzt vorher Variablen",
       "notes": "Dynamische Konfiguration → template; statische Datei → copy.",
@@ -136,6 +147,7 @@
       "title": "Handler auslösen",
       "exercise": {
         "id": "ex-cloze-notify",
+        "stable_id": "ex-ms942cfe03hj1",
         "type": "cloze",
         "prompt": "Ergänze das Schlüsselwort, mit dem ein Task einen Handler benachrichtigt.",
         "card_ids": ["card-02"],
@@ -151,6 +163,7 @@
       "title": "Jinja2-Schleife schließen",
       "exercise": {
         "id": "ex-cloze-for",
+        "stable_id": "ex-ms942cfe03igf",
         "type": "cloze",
         "prompt": "Ergänze die Anweisung, die eine Jinja2-for-Schleife beendet.",
         "card_ids": ["card-08"],
@@ -166,6 +179,7 @@
       "title": "Jinja2-Klammern",
       "exercise": {
         "id": "ex-match-jinja",
+        "stable_id": "ex-ms942cfe03jaa",
         "type": "matching",
         "prompt": "Ordne jedem Jinja2-Element seine Funktion zu.",
         "card_ids": ["card-07", "card-08", "card-09", "card-10"],
@@ -184,6 +198,7 @@
       "title": "Begriffe zuordnen",
       "exercise": {
         "id": "ex-match-handler-template",
+        "stable_id": "ex-ms942cfe03k9z",
         "type": "matching",
         "prompt": "Ordne jedem Begriff die passende Beschreibung zu.",
         "card_ids": ["card-01", "card-04", "card-05", "card-11"],
@@ -202,6 +217,7 @@
       "title": "Wann läuft der Handler?",
       "exercise": {
         "id": "ex-free-notify-changed",
+        "stable_id": "ex-ms942cfe03lr0",
         "type": "free_text",
         "prompt": "Welchen Status muss ein Task melden, damit das zugehörige notify den Handler tatsächlich auslöst?",
         "card_ids": ["card-02", "card-04"],
@@ -217,6 +233,7 @@
       "title": "template oder copy?",
       "exercise": {
         "id": "ex-free-template-copy",
+        "stable_id": "ex-ms942cfe03mpb",
         "type": "free_text",
         "prompt": "Du willst eine Konfigurationsdatei ausrollen, in der Variablen wie der Port dynamisch eingesetzt werden. Welches Modul nimmst du?",
         "card_ids": ["card-05", "card-11"],

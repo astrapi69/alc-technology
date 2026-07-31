@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-betriebssystem",
+      "stable_id": "card-ms942cff0463p",
       "front": "Betriebssystem (operating system)",
       "back": "Die grundlegende Software, die die Hardware verwaltet und anderen Programmen eine Arbeitsumgebung bietet.",
       "notes": "Abgekürzt 'OS' oder im Deutschen 'BS'. Ohne Betriebssystem läuft kein normales Programm.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-windows",
+      "stable_id": "card-ms942cff047w8",
       "front": "Windows",
       "back": "Ein weit verbreitetes Betriebssystem der Firma Microsoft.",
       "notes": "Das auf Privat-PCs am häufigsten genutzte Betriebssystem.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-linux",
+      "stable_id": "card-ms942cff048fc",
       "front": "Linux",
       "back": "Ein freies, quelloffenes Betriebssystem, das besonders auf Servern verbreitet ist.",
       "notes": "Es gibt viele Varianten ('Distributionen'), z. B. Ubuntu oder Debian.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-macos",
+      "stable_id": "card-ms942cff049bg",
       "front": "macOS",
       "back": "Das Betriebssystem der Firma Apple für deren Mac-Computer.",
       "notes": "Läuft nur auf Apple-Hardware.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-kernel",
+      "stable_id": "card-ms942cff04ap7",
       "front": "Kernel",
       "back": "Der Kern des Betriebssystems, der direkt die Hardware steuert und die Ressourcen verteilt.",
       "notes": "Er verwaltet z. B. CPU-Zeit und Arbeitsspeicher für alle Programme.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-dateisystem",
+      "stable_id": "card-ms942cff04bf9",
       "front": "Dateisystem (file system)",
       "back": "Die Methode, mit der ein Betriebssystem Dateien und Ordner auf einem Speicher organisiert und wiederfindet.",
       "notes": "Beispiele für Dateisysteme: NTFS (Windows), ext4 (Linux), APFS (macOS).",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-datei",
+      "stable_id": "card-ms942cff04cxe",
       "front": "Datei (file)",
       "back": "Eine benannte Einheit von Daten, die auf einem Speicher abgelegt ist.",
       "notes": "Beispiel: ein Foto, ein Text oder ein Programm ist jeweils eine Datei.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-ordner",
+      "stable_id": "card-ms942cff04d4v",
       "front": "Ordner (Verzeichnis)",
       "back": "Ein Behälter, der Dateien und weitere Ordner gruppiert.",
       "notes": "Auf Englisch 'folder' oder 'directory'. Ordner bilden eine Baumstruktur.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-prozess",
+      "stable_id": "card-ms942cff04edb",
       "front": "Prozess (process)",
       "back": "Ein gerade laufendes Programm, dem das Betriebssystem Speicher und CPU-Zeit zuteilt.",
       "notes": "Dasselbe Programm kann mehrmals laufen — dann gibt es mehrere Prozesse.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-treiber",
+      "stable_id": "card-ms942cff04faf",
       "front": "Treiber (driver)",
       "back": "Spezielle Software, die dem Betriebssystem erklärt, wie es ein bestimmtes Hardware-Gerät ansteuert.",
       "notes": "Beispiel: ein Druckertreiber für einen Drucker.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-benutzeroberflaeche",
+      "stable_id": "card-ms942cff04g4s",
       "front": "Benutzeroberfläche (GUI)",
       "back": "Die grafische Oberfläche mit Fenstern, Symbolen und Menüs, über die man den Computer bedient.",
       "notes": "GUI steht für 'Graphical User Interface'. Gegenstück ist die Kommandozeile.",
@@ -108,6 +119,7 @@
     },
     {
       "id": "it-kommandozeile",
+      "stable_id": "card-ms942cff04hpl",
       "front": "Kommandozeile (Terminal)",
       "back": "Eine textbasierte Eingabe, über die man dem Computer Befehle als Text gibt.",
       "notes": "Auf Englisch 'command line'. Beliebt bei Profis und auf Servern.",
@@ -117,6 +129,7 @@
     },
     {
       "id": "it-multitasking",
+      "stable_id": "card-ms942cff04iyq",
       "front": "Multitasking",
       "back": "Die Fähigkeit eines Betriebssystems, mehrere Programme scheinbar gleichzeitig laufen zu lassen.",
       "notes": "Der Kernel teilt die CPU-Zeit schnell zwischen den Prozessen auf.",
@@ -145,6 +158,7 @@
       "title": "Betriebssysteme und Begriffe",
       "exercise": {
         "id": "ex-match-os",
+        "stable_id": "ex-ms942cff04jz2",
         "type": "matching",
         "prompt": "Ordne jedem Begriff die passende Beschreibung zu.",
         "card_ids": ["it-windows", "it-linux", "it-macos", "it-kernel"],
@@ -164,6 +178,7 @@
       "title": "Die grundlegende Software",
       "exercise": {
         "id": "ex-free-betriebssystem",
+        "stable_id": "ex-ms942cff04k8x",
         "type": "free_text",
         "prompt": "Wie heißt die grundlegende Software, die die Hardware verwaltet und Programme laufen lässt?",
         "card_ids": ["it-betriebssystem"],
@@ -180,6 +195,7 @@
       "title": "Laufendes Programm",
       "exercise": {
         "id": "ex-cloze-prozess",
+        "stable_id": "ex-ms942cff04l94",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für ein laufendes Programm.",
         "card_ids": ["it-prozess"],
@@ -196,6 +212,7 @@
       "title": "Dateien organisieren",
       "exercise": {
         "id": "ex-free-dateisystem",
+        "stable_id": "ex-ms942cff04ma2",
         "type": "free_text",
         "prompt": "Wie nennt man die Methode, mit der das Betriebssystem Dateien und Ordner organisiert?",
         "card_ids": ["it-dateisystem"],
@@ -212,6 +229,7 @@
       "title": "Aufgabe des Kernels",
       "exercise": {
         "id": "ex-tiles-kernel",
+        "stable_id": "ex-ms942cff04ngm",
         "type": "word_tiles",
         "prompt": "Setze den Satz über den Kernel zusammen.",
         "card_ids": ["it-kernel"],
@@ -227,6 +245,7 @@
       "title": "Hardware ansteuern",
       "exercise": {
         "id": "ex-cloze-treiber",
+        "stable_id": "ex-ms942cff04ox5",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für die Software, die ein Gerät ansteuert.",
         "card_ids": ["it-treiber"],
@@ -243,6 +262,7 @@
       "title": "Grafische Bedienung",
       "exercise": {
         "id": "ex-pick-bedienung",
+        "stable_id": "ex-ms942cff04phw",
         "type": "picture_choice",
         "prompt": "Welche Art der Bedienung ist grafisch, mit Fenstern und Symbolen?",
         "card_ids": ["it-benutzeroberflaeche", "it-kommandozeile"],

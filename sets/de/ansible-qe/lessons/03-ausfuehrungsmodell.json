@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "card-01",
+      "stable_id": "card-ms942cfb00y5o",
       "front": "Task-Sequenzialität",
       "back": "Innerhalb eines Hosts laufen die Tasks streng in der notierten Reihenfolge",
       "notes": "Task 2 startet auf einem Host erst, wenn Task 1 dort fertig ist.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "card-02",
+      "stable_id": "card-ms942cfb00zw8",
       "front": "Host-Parallelität",
       "back": "Ein einzelner Task wird gleichzeitig auf mehreren Hosts ausgeführt",
       "notes": "Alle Hosts arbeiten denselben Task ab, bevor Ansible zum nächsten Task geht.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "card-03",
+      "stable_id": "card-ms942cfb01057",
       "front": "Task-Synchronisationspunkt",
       "back": "Ansible wartet, bis ein Task auf allen Hosts fertig ist, bevor der nächste startet",
       "notes": "Deshalb 'wandert' die Ausführung Task für Task durch das Playbook.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "card-04",
+      "stable_id": "card-ms942cfb011hp",
       "front": "forks",
       "back": "Konfiguration, wie viele Hosts Ansible gleichzeitig bearbeitet (Standard 5)",
       "notes": "Höhere Werte beschleunigen große Inventories, belasten aber den Control Node.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "card-05",
+      "stable_id": "card-ms942cfb012cr",
       "front": "serial",
       "back": "Begrenzt, wie viele Hosts ein Play gleichzeitig durchlaufen (Batch-Größe)",
       "notes": "Wichtig für Rolling Updates, damit nie alle Server gleichzeitig down sind.",
@@ -56,6 +61,7 @@
     },
     {
       "id": "card-06",
+      "stable_id": "card-ms942cfb013ip",
       "front": "ok (Status)",
       "back": "Der Task wurde geprüft, der Zustand war bereits korrekt — keine Änderung",
       "notes": "Zeigt, dass Idempotenz greift.",
@@ -65,6 +71,7 @@
     },
     {
       "id": "card-07",
+      "stable_id": "card-ms942cfb0146k",
       "front": "changed (Status)",
       "back": "Der Task hat den Zustand tatsächlich verändert",
       "notes": "Beim zweiten Lauf sollten 'changed'-Tasks idealerweise auf 'ok' fallen.",
@@ -74,6 +81,7 @@
     },
     {
       "id": "card-08",
+      "stable_id": "card-ms942cfb015f1",
       "front": "failed (Status)",
       "back": "Der Task ist fehlgeschlagen; der Host wird aus dem weiteren Play entfernt",
       "notes": "Standardmäßig stoppt Ansible für diesen Host die restlichen Tasks.",
@@ -83,6 +91,7 @@
     },
     {
       "id": "card-09",
+      "stable_id": "card-ms942cfb016qy",
       "front": "PLAY RECAP",
       "back": "Abschlussübersicht pro Host: ok / changed / unreachable / failed",
       "notes": "Erste Anlaufstelle, um den Ergebniszustand eines Laufs zu beurteilen.",
@@ -92,6 +101,7 @@
     },
     {
       "id": "card-10",
+      "stable_id": "card-ms942cfb017vc",
       "front": "Fail-Fast vs. Weiterlaufen",
       "back": "Ein fehlgeschlagener Host stoppt nur für sich selbst; andere Hosts laufen weiter",
       "notes": "any_errors_fatal: true bricht das ganze Play bei einem einzigen Fehler ab.",
@@ -101,6 +111,7 @@
     },
     {
       "id": "card-11",
+      "stable_id": "card-ms942cfb0184m",
       "front": "run_once",
       "back": "Task wird nur auf einem einzigen Host des Batches ausgeführt",
       "notes": "Nützlich z. B. für Datenbankmigrationen, die nur einmal laufen dürfen.",
@@ -128,6 +139,7 @@
       "title": "Reihenfolge verstehen",
       "exercise": {
         "id": "ex-free-kernfrage",
+        "stable_id": "ex-ms942cfb0195t",
         "type": "free_text",
         "prompt": "Ein Play hat 3 Hosts und 2 Tasks. Erreicht Host web1 den zweiten Task, bevor web2 und web3 den ersten Task beendet haben? Antworte mit Ja oder Nein und kurzer Begründung.",
         "card_ids": ["card-02", "card-03"],
@@ -151,6 +163,7 @@
       "title": "Sequenziell oder parallel?",
       "exercise": {
         "id": "ex-match-achsen",
+        "stable_id": "ex-ms942cfb01ae3",
         "type": "matching",
         "prompt": "Ordne jeder Aussage das passende Konzept zu.",
         "card_ids": ["card-01", "card-02", "card-03", "card-04"],
@@ -169,6 +182,7 @@
       "title": "Task-Status deuten",
       "exercise": {
         "id": "ex-match-status",
+        "stable_id": "ex-ms942cfb01bo5",
         "type": "matching",
         "prompt": "Ordne jedem Status seine Bedeutung zu.",
         "card_ids": ["card-06", "card-07", "card-08", "card-09"],
@@ -187,6 +201,7 @@
       "title": "Rolling Update konfigurieren",
       "exercise": {
         "id": "ex-cloze-serial",
+        "stable_id": "ex-ms942cfb01csk",
         "type": "cloze",
         "prompt": "Ergänze den Schlüssel, der jeweils nur 2 Hosts gleichzeitig durch das Play schickt (Batch-Größe).",
         "card_ids": ["card-05"],
@@ -202,6 +217,7 @@
       "title": "Zweiter Lauf",
       "exercise": {
         "id": "ex-free-idempotenz-status",
+        "stable_id": "ex-ms942cfb01dko",
         "type": "free_text",
         "prompt": "Welchen Status sollte ein idempotenter Task beim ZWEITEN Lauf melden, wenn sich am Zielzustand nichts mehr ändert?",
         "card_ids": ["card-06", "card-07"],

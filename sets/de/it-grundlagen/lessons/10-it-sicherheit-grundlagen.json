@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-it-sicherheit",
+      "stable_id": "card-ms942cfj08as0",
       "front": "IT-Sicherheit",
       "back": "Alle Maßnahmen, die Daten und Systeme vor unbefugtem Zugriff, Verlust und Schaden schützen.",
       "notes": "Auf Englisch 'IT security' oder 'cybersecurity'.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-passwort",
+      "stable_id": "card-ms942cfj08bai",
       "front": "Passwort (password)",
       "back": "Ein geheimes Kennwort, das den Zugang zu einem Konto oder System schützt.",
       "notes": "Ein sicheres Passwort ist lang und enthält Buchstaben, Zahlen und Sonderzeichen.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-passwortmanager",
+      "stable_id": "card-ms942cfj08c92",
       "front": "Passwortmanager",
       "back": "Ein Programm, das viele starke Passwörter sicher speichert und verwaltet.",
       "notes": "So muss man sich nur ein einziges Hauptpasswort merken.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-verschluesselung",
+      "stable_id": "card-ms942cfj08djo",
       "front": "Verschlüsselung (encryption)",
       "back": "Das Umwandeln von Daten in eine unlesbare Form, die nur mit dem richtigen Schlüssel wieder lesbar wird.",
       "notes": "Schützt Daten beim Übertragen und Speichern. Beispiel: HTTPS verschlüsselt Webverkehr.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-phishing",
+      "stable_id": "card-ms942cfj08e50",
       "front": "Phishing",
       "back": "Ein Betrugsversuch, bei dem Angreifer mit gefälschten Nachrichten an Passwörter oder Daten gelangen wollen.",
       "notes": "Oft per E-Mail mit gefälschten Links. 'Phishing' klingt wie 'fishing' (angeln).",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-firewall",
+      "stable_id": "card-ms942cfj08fso",
       "front": "Firewall",
       "back": "Eine Schutzkomponente, die den Netzwerkverkehr überwacht und unerwünschte Verbindungen blockiert.",
       "notes": "Wie ein Türsteher, der nur erlaubten Verkehr durchlässt.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-2fa",
+      "stable_id": "card-ms942cfj08gda",
       "front": "Zwei-Faktor-Authentifizierung (2FA)",
       "back": "Eine zusätzliche Sicherung, bei der man neben dem Passwort einen zweiten Nachweis braucht.",
       "notes": "Zweiter Faktor z. B. ein Code aufs Handy. Selbst ein gestohlenes Passwort reicht dann nicht.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-malware",
+      "stable_id": "card-ms942cfj08hvs",
       "front": "Malware (Schadsoftware)",
       "back": "Software, die absichtlich Schaden anrichtet oder Daten ausspäht.",
       "notes": "Oberbegriff für Viren, Trojaner und Würmer. 'Mal' steht für 'malicious' (bösartig).",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-virus",
+      "stable_id": "card-ms942cfj08ic6",
       "front": "Virus",
       "back": "Eine Form von Malware, die sich an Dateien anhängt und sich beim Ausführen weiterverbreitet.",
       "notes": "Ein Virus braucht eine 'Wirtsdatei', um sich zu verbreiten.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-backup",
+      "stable_id": "card-ms942cfj08jk2",
       "front": "Backup (Datensicherung)",
       "back": "Eine zusätzliche Kopie von Daten, um sie bei Verlust oder Beschädigung wiederherstellen zu können.",
       "notes": "Regelmäßige Backups schützen z. B. vor Erpressungs-Malware (Ransomware).",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-update",
+      "stable_id": "card-ms942cfj08kz9",
       "front": "Update (Aktualisierung)",
       "back": "Eine Aktualisierung von Software, die oft auch Sicherheitslücken schließt.",
       "notes": "Regelmäßige Updates sind eine der einfachsten Schutzmaßnahmen.",
@@ -127,6 +138,7 @@
       "title": "Sicherheitsbegriffe zuordnen",
       "exercise": {
         "id": "ex-match-sicherheit",
+        "stable_id": "ex-ms942cfj08lmr",
         "type": "matching",
         "prompt": "Ordne jeden Begriff der passenden Beschreibung zu.",
         "card_ids": ["it-phishing", "it-firewall", "it-malware", "it-verschluesselung"],
@@ -146,6 +158,7 @@
       "title": "Betrug per Nachricht",
       "exercise": {
         "id": "ex-free-phishing",
+        "stable_id": "ex-ms942cfj08mkd",
         "type": "free_text",
         "prompt": "Wie nennt man den Betrugsversuch, bei dem man mit gefälschten Nachrichten an Passwörter gelangen will?",
         "card_ids": ["it-phishing"],
@@ -162,6 +175,7 @@
       "title": "Zweiter Nachweis",
       "exercise": {
         "id": "ex-cloze-2fa",
+        "stable_id": "ex-ms942cfj08nhx",
         "type": "cloze",
         "prompt": "Ergänze die Abkürzung für die zusätzliche Sicherung mit zweitem Nachweis.",
         "card_ids": ["it-2fa"],
@@ -178,6 +192,7 @@
       "title": "Daten unlesbar machen",
       "exercise": {
         "id": "ex-free-verschluesselung",
+        "stable_id": "ex-ms942cfj08omb",
         "type": "free_text",
         "prompt": "Wie heißt das Umwandeln von Daten in eine unlesbare Form, die nur mit Schlüssel lesbar ist?",
         "card_ids": ["it-verschluesselung"],
@@ -194,6 +209,7 @@
       "title": "Aufgabe der Firewall",
       "exercise": {
         "id": "ex-tiles-firewall",
+        "stable_id": "ex-ms942cfj08pfo",
         "type": "word_tiles",
         "prompt": "Setze den Satz über die Firewall zusammen.",
         "card_ids": ["it-firewall"],
@@ -209,6 +225,7 @@
       "title": "Daten retten",
       "exercise": {
         "id": "ex-cloze-backup",
+        "stable_id": "ex-ms942cfj08q5w",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für eine zusätzliche Kopie zur Wiederherstellung.",
         "card_ids": ["it-backup"],
@@ -225,6 +242,7 @@
       "title": "Schädliche Software erkennen",
       "exercise": {
         "id": "ex-pick-malware",
+        "stable_id": "ex-ms942cfj08r1x",
         "type": "picture_choice",
         "prompt": "Welcher Begriff bezeichnet Software, die absichtlich Schaden anrichtet?",
         "card_ids": ["it-malware", "it-firewall"],
