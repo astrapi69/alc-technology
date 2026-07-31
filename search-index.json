@@ -1,6 +1,6 @@
 {
   "repo": "astrapi69/alc-technology",
-  "generated": "2026-07-31T15:48:03Z",
+  "generated": "2026-07-31T16:08:58Z",
   "schema_version": "1.0",
   "sets": [
     {
@@ -19,6 +19,7 @@
         "it"
       ],
       "visibility": "visible",
+      "review_status": "authored",
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
@@ -41,6 +42,7 @@
         "automation"
       ],
       "visibility": "visible",
+      "review_status": "authored",
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
