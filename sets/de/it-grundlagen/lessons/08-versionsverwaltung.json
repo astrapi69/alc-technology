@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-versionsverwaltung",
+      "stable_id": "card-ms942cfh07a0k",
       "front": "Versionsverwaltung (version control)",
       "back": "Ein System, das alle Änderungen an Dateien über die Zeit aufzeichnet und frühere Stände wiederherstellbar macht.",
       "notes": "So kann man jederzeit nachsehen, wer was wann geändert hat.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-git",
+      "stable_id": "card-ms942cfh07bov",
       "front": "Git",
       "back": "Das heute am weitesten verbreitete Versionsverwaltungssystem.",
       "notes": "Git wurde 2005 von Linus Torvalds entwickelt.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-repository",
+      "stable_id": "card-ms942cfh07cxu",
       "front": "Repository (Repo)",
       "back": "Der Speicherort eines Projekts samt seiner kompletten Änderungsgeschichte.",
       "notes": "Kurz 'Repo'. Plattformen wie GitHub hosten Repositories online.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-commit",
+      "stable_id": "card-ms942cfh07d7b",
       "front": "Commit",
       "back": "Ein gespeicherter Schnappschuss der Änderungen, meist mit einer kurzen Beschreibung.",
       "notes": "Jeder Commit hält einen bestimmten Stand des Projekts fest.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-commit-message",
+      "stable_id": "card-ms942cfh07eqh",
       "front": "Commit-Nachricht (commit message)",
       "back": "Eine kurze Beschreibung, die erklärt, was in einem Commit geändert wurde.",
       "notes": "Gute Nachrichten machen die Geschichte verständlich.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-branch",
+      "stable_id": "card-ms942cfh07fb7",
       "front": "Branch (Zweig)",
       "back": "Eine parallele Entwicklungslinie, auf der man Änderungen unabhängig vom Hauptstand vornimmt.",
       "notes": "So kann man an einer neuen Funktion arbeiten, ohne den Hauptzweig zu stören.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-merge",
+      "stable_id": "card-ms942cfh07gpj",
       "front": "Merge (Zusammenführen)",
       "back": "Das Zusammenführen der Änderungen eines Branches in einen anderen.",
       "notes": "Damit holt man die Arbeit aus einem Zweig zurück in den Hauptzweig.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-merge-konflikt",
+      "stable_id": "card-ms942cfh07h2g",
       "front": "Merge-Konflikt",
       "back": "Eine Situation, in der zwei Branches dieselbe Stelle unterschiedlich geändert haben und Git nicht automatisch zusammenführen kann.",
       "notes": "Dann muss ein Mensch entscheiden, welche Änderung gilt.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-push",
+      "stable_id": "card-ms942cfh07ika",
       "front": "Push",
       "back": "Das Hochladen lokaler Commits in ein entferntes Repository.",
       "notes": "Beispiel: deine Commits zu GitHub hochladen.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-pull",
+      "stable_id": "card-ms942cfh07jw2",
       "front": "Pull",
       "back": "Das Herunterladen und Einbinden von Änderungen aus einem entfernten Repository.",
       "notes": "So holst du dir Änderungen anderer auf deinen Rechner.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-clone",
+      "stable_id": "card-ms942cfh07k3g",
       "front": "Clone (Klonen)",
       "back": "Das Erstellen einer lokalen Kopie eines entfernten Repositorys.",
       "notes": "Der erste Schritt, um an einem bestehenden Projekt mitzuarbeiten.",
@@ -127,6 +138,7 @@
       "title": "Git-Begriffe zuordnen",
       "exercise": {
         "id": "ex-match-git",
+        "stable_id": "ex-ms942cfh07lg4",
         "type": "matching",
         "prompt": "Ordne jeden Begriff der passenden Beschreibung zu.",
         "card_ids": ["it-commit", "it-branch", "it-merge", "it-repository"],
@@ -146,6 +158,7 @@
       "title": "Das verbreitetste System",
       "exercise": {
         "id": "ex-free-git",
+        "stable_id": "ex-ms942cfh07myq",
         "type": "free_text",
         "prompt": "Wie heißt das heute am weitesten verbreitete Versionsverwaltungssystem?",
         "card_ids": ["it-git"],
@@ -162,6 +175,7 @@
       "title": "Ein Schnappschuss",
       "exercise": {
         "id": "ex-cloze-commit",
+        "stable_id": "ex-ms942cfh07nzm",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für einen gespeicherten Schnappschuss der Änderungen.",
         "card_ids": ["it-commit"],
@@ -178,6 +192,7 @@
       "title": "Hochladen",
       "exercise": {
         "id": "ex-free-push",
+        "stable_id": "ex-ms942cfh07ozk",
         "type": "free_text",
         "prompt": "Wie heißt der Befehl, der lokale Commits in ein entferntes Repository hochlädt?",
         "card_ids": ["it-push"],
@@ -194,6 +209,7 @@
       "title": "Push und Pull",
       "exercise": {
         "id": "ex-tiles-push-pull",
+        "stable_id": "ex-ms942cfh07phx",
         "type": "word_tiles",
         "prompt": "Setze den Merksatz zusammen.",
         "card_ids": ["it-push", "it-pull"],
@@ -209,6 +225,7 @@
       "title": "Paralleler Zweig",
       "exercise": {
         "id": "ex-cloze-branch",
+        "stable_id": "ex-ms942cfh07q66",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für eine parallele Entwicklungslinie.",
         "card_ids": ["it-branch"],
@@ -225,6 +242,7 @@
       "title": "Herunterladen",
       "exercise": {
         "id": "ex-pick-pull",
+        "stable_id": "ex-ms942cfh07rph",
         "type": "picture_choice",
         "prompt": "Welcher Befehl holt Änderungen aus einem entfernten Repository herunter?",
         "card_ids": ["it-pull", "it-push"],

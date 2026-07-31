@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "card-01",
+      "stable_id": "card-ms942cfc01eww",
       "front": "assert",
       "back": "Modul, das Bedingungen prüft und das Play bei Nichterfüllung scheitern lässt",
       "notes": "Das Test-Modul schlechthin: macht Erwartungen explizit.",
@@ -20,6 +21,7 @@
     },
     {
       "id": "card-02",
+      "stable_id": "card-ms942cfc01fjx",
       "front": "that (bei assert)",
       "back": "Liste von Bedingungen, die alle wahr sein müssen",
       "notes": "Ist eine davon falsch, schlägt der Task fehl.",
@@ -29,6 +31,7 @@
     },
     {
       "id": "card-03",
+      "stable_id": "card-ms942cfc01g1h",
       "front": "fail_msg / success_msg",
       "back": "Eigene Meldung von assert bei Fehlschlag bzw. Erfolg",
       "notes": "Macht Testberichte aussagekräftig.",
@@ -38,6 +41,7 @@
     },
     {
       "id": "card-04",
+      "stable_id": "card-ms942cfc01hoz",
       "front": "uri",
       "back": "Modul für HTTP(S)-Anfragen, ideal für API- und Health-Check-Tests",
       "notes": "Prüft Statuscode, Header und Antwortinhalt.",
@@ -49,6 +53,7 @@
     },
     {
       "id": "card-05",
+      "stable_id": "card-ms942cfc01iju",
       "front": "status_code (bei uri)",
       "back": "Erwarteter HTTP-Statuscode; weicht die Antwort ab, schlägt der Task fehl",
       "notes": "z. B. status_code: 200 oder eine Liste [200, 201].",
@@ -58,6 +63,7 @@
     },
     {
       "id": "card-06",
+      "stable_id": "card-ms942cfc01jmm",
       "front": "command",
       "back": "Führt ein Programm direkt aus, OHNE Shell — sicherer, aber keine Pipes/Variablen",
       "notes": "Kein |, >, $VAR oder * — dafür gibt es shell.",
@@ -69,6 +75,7 @@
     },
     {
       "id": "card-07",
+      "stable_id": "card-ms942cfc01k2e",
       "front": "shell",
       "back": "Führt einen Befehl über die Shell aus — erlaubt Pipes, Umleitungen, Variablen",
       "notes": "Mächtiger, aber anfälliger; nur nutzen, wenn command nicht reicht.",
@@ -80,6 +87,7 @@
     },
     {
       "id": "card-08",
+      "stable_id": "card-ms942cfc01lk7",
       "front": "register",
       "back": "Speichert das Ergebnis eines Tasks in einer Variablen zur späteren Auswertung",
       "notes": "Pflichtbaustein, um Ausgaben mit assert zu prüfen.",
@@ -89,6 +97,7 @@
     },
     {
       "id": "card-09",
+      "stable_id": "card-ms942cfc01mmq",
       "front": "failed_when",
       "back": "Definiert eine eigene Fehlerbedingung für einen Task",
       "notes": "z. B. failed_when: \"'ERROR' in result.stdout\".",
@@ -98,6 +107,7 @@
     },
     {
       "id": "card-10",
+      "stable_id": "card-ms942cfc01nh2",
       "front": "changed_when",
       "back": "Steuert, wann ein Task als 'changed' gilt — wichtig bei command/shell",
       "notes": "command/shell melden sonst immer 'changed'; changed_when: false markiert reine Prüfungen.",
@@ -107,6 +117,7 @@
     },
     {
       "id": "card-11",
+      "stable_id": "card-ms942cfc01oua",
       "front": "Warum command vor shell?",
       "back": "command ist sicherer und vorhersehbarer; shell nur bei Bedarf an Shell-Features",
       "notes": "Best Practice für robuste, reproduzierbare Tests.",
@@ -134,6 +145,7 @@
       "title": "Module und ihr Zweck",
       "exercise": {
         "id": "ex-match-module",
+        "stable_id": "ex-ms942cfc01psx",
         "type": "matching",
         "prompt": "Ordne jedem Modul seinen Zweck zu.",
         "card_ids": ["card-01", "card-04", "card-06", "card-07"],
@@ -152,6 +164,7 @@
       "title": "assert-Bedingung",
       "exercise": {
         "id": "ex-cloze-assert",
+        "stable_id": "ex-ms942cfc01q8y",
         "type": "cloze",
         "prompt": "Ergänze den Schlüssel, unter dem assert die Liste der zu prüfenden Bedingungen erwartet.",
         "card_ids": ["card-01", "card-02"],
@@ -167,6 +180,7 @@
       "title": "uri-Health-Check",
       "exercise": {
         "id": "ex-cloze-uri",
+        "stable_id": "ex-ms942cfc01rri",
         "type": "cloze",
         "prompt": "Ergänze den Parameter, mit dem uri den erwarteten HTTP-Code prüft.",
         "card_ids": ["card-04", "card-05"],
@@ -182,6 +196,7 @@
       "title": "command oder shell?",
       "exercise": {
         "id": "ex-free-command-shell",
+        "stable_id": "ex-ms942cfc01s5f",
         "type": "free_text",
         "prompt": "Du willst die Ausgabe eines Befehls per Pipe an 'wc -l' weiterreichen. Welches Modul brauchst du dafür?",
         "card_ids": ["card-06", "card-07"],
@@ -197,6 +212,7 @@
       "title": "command als reine Prüfung",
       "exercise": {
         "id": "ex-free-changed-when",
+        "stable_id": "ex-ms942cfc01tv0",
         "type": "free_text",
         "prompt": "Welchen Parameter setzt du auf 'false', damit ein command-Task, der nur prüft, nicht fälschlich als 'changed' gilt?",
         "card_ids": ["card-10"],

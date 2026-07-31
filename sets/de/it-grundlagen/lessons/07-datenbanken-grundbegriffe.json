@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-datenbank",
+      "stable_id": "card-ms942cfh06sv2",
       "front": "Datenbank (database)",
       "back": "Eine strukturierte Sammlung von Daten, die dauerhaft gespeichert und gezielt abgefragt werden kann.",
       "notes": "Beispiel: alle Kunden eines Online-Shops mit Name, Adresse und Bestellungen.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-dbms",
+      "stable_id": "card-ms942cfh06tij",
       "front": "Datenbanksystem (DBMS)",
       "back": "Die Software, die eine Datenbank verwaltet und Abfragen ausführt.",
       "notes": "DBMS steht für 'Database Management System'. Beispiele: MySQL, PostgreSQL.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-tabelle",
+      "stable_id": "card-ms942cfh06uxf",
       "front": "Tabelle (table)",
       "back": "Eine Struktur aus Zeilen und Spalten, in der zusammengehörige Daten gespeichert werden.",
       "notes": "Eine relationale Datenbank besteht aus mehreren Tabellen.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-zeile",
+      "stable_id": "card-ms942cfh06v85",
       "front": "Zeile (row / Datensatz)",
       "back": "Eine waagerechte Reihe in einer Tabelle, die einen einzelnen Datensatz darstellt.",
       "notes": "Beispiel: eine Zeile = ein Kunde mit all seinen Angaben.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-spalte",
+      "stable_id": "card-ms942cfh06w2y",
       "front": "Spalte (column / Feld)",
       "back": "Eine senkrechte Spalte in einer Tabelle, die ein bestimmtes Merkmal aller Datensätze enthält.",
       "notes": "Beispiel: die Spalte 'E-Mail' enthält die E-Mail jedes Kunden.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-primaerschluessel",
+      "stable_id": "card-ms942cfh06x37",
       "front": "Primärschlüssel (primary key)",
       "back": "Eine Spalte, deren Wert jede Zeile einer Tabelle eindeutig identifiziert.",
       "notes": "Beispiel: eine Kundennummer. Kein Wert darf doppelt vorkommen.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-fremdschluessel",
+      "stable_id": "card-ms942cfh06y4p",
       "front": "Fremdschlüssel (foreign key)",
       "back": "Eine Spalte, die auf den Primärschlüssel einer anderen Tabelle verweist und so Tabellen verknüpft.",
       "notes": "So verbindet man z. B. die Tabelle 'Bestellungen' mit der Tabelle 'Kunden'.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-sql",
+      "stable_id": "card-ms942cfh06zi2",
       "front": "SQL",
       "back": "Die Abfragesprache, mit der man Daten in relationalen Datenbanken abfragt und verändert.",
       "notes": "SQL steht für 'Structured Query Language'.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-query",
+      "stable_id": "card-ms942cfh0702k",
       "front": "Query (Abfrage)",
       "back": "Eine Anfrage an die Datenbank, um bestimmte Daten zu lesen oder zu verändern.",
       "notes": "Beispiel: 'Gib alle Kunden aus Berlin aus'.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-select",
+      "stable_id": "card-ms942cfh071rd",
       "front": "SELECT",
       "back": "Der SQL-Befehl, mit dem man Daten aus einer Tabelle ausliest.",
       "notes": "Beispiel: SELECT * FROM kunden liest alle Spalten der Tabelle 'kunden'.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-relationale-db",
+      "stable_id": "card-ms942cfh072g9",
       "front": "Relationale Datenbank",
       "back": "Eine Datenbank, die Daten in Tabellen organisiert, welche über Schlüssel miteinander in Beziehung stehen.",
       "notes": "Das verbreitetste Datenbankmodell. 'Relation' meint hier eine Tabelle.",
@@ -127,6 +138,7 @@
       "title": "Datenbank-Begriffe zuordnen",
       "exercise": {
         "id": "ex-match-db",
+        "stable_id": "ex-ms942cfh07386",
         "type": "matching",
         "prompt": "Ordne jeden Begriff der passenden Beschreibung zu.",
         "card_ids": ["it-tabelle", "it-zeile", "it-spalte", "it-primaerschluessel"],
@@ -146,6 +158,7 @@
       "title": "Die Abfragesprache",
       "exercise": {
         "id": "ex-free-sql",
+        "stable_id": "ex-ms942cfh0741i",
         "type": "free_text",
         "prompt": "Wie heißt die Sprache, mit der man relationale Datenbanken abfragt?",
         "card_ids": ["it-sql"],
@@ -162,6 +175,7 @@
       "title": "Eindeutige Zeile",
       "exercise": {
         "id": "ex-cloze-primaer",
+        "stable_id": "ex-ms942cfh075vh",
         "type": "cloze",
         "prompt": "Ergänze den Schlüssel, der jede Zeile eindeutig identifiziert.",
         "card_ids": ["it-primaerschluessel"],
@@ -178,6 +192,7 @@
       "title": "Ein Datensatz",
       "exercise": {
         "id": "ex-free-zeile",
+        "stable_id": "ex-ms942cfh076a5",
         "type": "free_text",
         "prompt": "Wie nennt man eine waagerechte Reihe in einer Tabelle, die einen Datensatz darstellt?",
         "card_ids": ["it-zeile"],
@@ -194,6 +209,7 @@
       "title": "Eine SELECT-Abfrage",
       "exercise": {
         "id": "ex-tiles-select",
+        "stable_id": "ex-ms942cfh077va",
         "type": "word_tiles",
         "prompt": "Setze die SQL-Abfrage zusammen, die alle Spalten der Tabelle 'kunden' liest.",
         "card_ids": ["it-select"],
@@ -209,6 +225,7 @@
       "title": "Eine Anfrage",
       "exercise": {
         "id": "ex-cloze-query",
+        "stable_id": "ex-ms942cfh078lg",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für eine einzelne Anfrage an die Datenbank.",
         "card_ids": ["it-query"],
@@ -225,6 +242,7 @@
       "title": "Merkmal aller Datensätze",
       "exercise": {
         "id": "ex-pick-spalte",
+        "stable_id": "ex-ms942cfh079vj",
         "type": "picture_choice",
         "prompt": "Wie nennt man eine senkrechte Spalte, die ein Merkmal aller Datensätze enthält?",
         "card_ids": ["it-spalte", "it-zeile"],

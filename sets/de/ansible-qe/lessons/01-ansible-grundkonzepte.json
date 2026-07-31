@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "card-01",
+      "stable_id": "card-ms942cf9001kk",
       "front": "Ansible",
       "back": "Open-Source-Werkzeug zur Automatisierung von Konfiguration, Deployment und Orchestrierung",
       "notes": "Beschreibt den Soll-Zustand deklarativ in YAML, statt Schritte imperativ zu skripten.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "card-02",
+      "stable_id": "card-ms942cf90027w",
       "front": "Inventory",
       "back": "Liste der verwalteten Hosts (Zielsysteme), meist in Gruppen organisiert",
       "notes": "Kann statisch (INI/YAML-Datei) oder dynamisch (Skript/Plugin) sein.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "card-03",
+      "stable_id": "card-ms942cf90032j",
       "front": "Playbook",
       "back": "YAML-Datei, die einen oder mehrere Plays mit ihren Tasks beschreibt",
       "notes": "Das zentrale Automatisierungsdokument in Ansible.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "card-04",
+      "stable_id": "card-ms942cf9004yr",
       "front": "Play",
       "back": "Verknüpft eine Host-Gruppe mit einer geordneten Liste von Tasks",
       "notes": "Ein Playbook kann mehrere Plays enthalten, die nacheinander laufen.",
@@ -45,6 +49,7 @@
     },
     {
       "id": "card-05",
+      "stable_id": "card-ms942cf90051u",
       "front": "Task",
       "back": "Einzelner Automatisierungsschritt, der genau ein Modul aufruft",
       "notes": "Tasks innerhalb eines Plays laufen streng der Reihe nach.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "card-06",
+      "stable_id": "card-ms942cf9006ls",
       "front": "Modul",
       "back": "Wiederverwendbare Einheit, die eine konkrete Aktion ausführt (z. B. copy, service, apt)",
       "notes": "Module sind das, was ein Task tatsächlich tut. Ansible liefert hunderte mit.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "card-07",
+      "stable_id": "card-ms942cf9007g7",
       "front": "Control Node",
       "back": "Maschine, auf der Ansible installiert ist und von der aus gesteuert wird",
       "notes": "Von hier aus werden Playbooks gegen die Managed Nodes ausgeführt.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "card-08",
+      "stable_id": "card-ms942cf90081c",
       "front": "Managed Node",
       "back": "Verwaltetes Zielsystem, auf dem Ansible Aktionen ausführt",
       "notes": "Braucht selbst keine Ansible-Installation, nur SSH und Python.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "card-09",
+      "stable_id": "card-ms942cf90096t",
       "front": "Agentenlos (agentless)",
       "back": "Ansible benötigt keinen dauerhaften Agenten auf den Zielsystemen, sondern nutzt SSH",
       "notes": "Reduziert Wartungsaufwand und Angriffsfläche gegenüber agentenbasierten Tools.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "card-10",
+      "stable_id": "card-ms942cf900agq",
       "front": "Idempotenz",
       "back": "Mehrfaches Ausführen führt zum selben Zielzustand, ohne unnötige Änderungen",
       "notes": "Beim zweiten Lauf meldet ein gut geschriebener Task 'ok' statt 'changed'.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "card-11",
+      "stable_id": "card-ms942cf900bwc",
       "front": "ansible-playbook",
       "back": "CLI-Befehl, um ein Playbook gegen ein Inventory auszuführen",
       "notes": "Beispiel: ansible-playbook -i inventory.ini site.yml",
@@ -128,6 +139,7 @@
       "title": "Begriffe und Definitionen",
       "exercise": {
         "id": "ex-match-begriffe",
+        "stable_id": "ex-ms942cf900c8v",
         "type": "matching",
         "prompt": "Ordne jedem Grundbegriff die passende Definition zu.",
         "card_ids": ["card-01", "card-02", "card-03", "card-05", "card-06"],
@@ -147,6 +159,7 @@
       "title": "Architektur-Komponenten",
       "exercise": {
         "id": "ex-match-architektur",
+        "stable_id": "ex-ms942cf900def",
         "type": "matching",
         "prompt": "Ordne jeder Komponente ihre Rolle zu.",
         "card_ids": ["card-07", "card-08", "card-04", "card-09"],
@@ -165,6 +178,7 @@
       "title": "Playbook ausführen",
       "exercise": {
         "id": "ex-cloze-run",
+        "stable_id": "ex-ms942cf900eo7",
         "type": "cloze",
         "prompt": "Ergänze den Befehl, der das Playbook site.yml gegen inventory.ini ausführt.",
         "card_ids": ["card-11"],
@@ -180,6 +194,7 @@
       "title": "Idempotenz erklären",
       "exercise": {
         "id": "ex-free-idempotenz",
+        "stable_id": "ex-ms942cf900fmv",
         "type": "free_text",
         "prompt": "Was bedeutet es, dass ein Ansible-Playbook idempotent ist?",
         "card_ids": ["card-10"],
@@ -203,6 +218,7 @@
       "title": "Warum agentenlos?",
       "exercise": {
         "id": "ex-free-agentless",
+        "stable_id": "ex-ms942cf900g52",
         "type": "free_text",
         "prompt": "Worüber verbindet sich Ansible mit den Managed Nodes, da es agentenlos arbeitet?",
         "card_ids": ["card-09", "card-08"],

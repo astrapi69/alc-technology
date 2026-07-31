@@ -9,6 +9,7 @@
   "cards": [
     {
       "id": "it-programmiersprache",
+      "stable_id": "card-ms942cfg059c9",
       "front": "Programmiersprache",
       "back": "Eine formale Sprache, mit der Menschen einem Computer Anweisungen geben.",
       "notes": "Beispiele: Python, JavaScript, Java, C.",
@@ -18,6 +19,7 @@
     },
     {
       "id": "it-code",
+      "stable_id": "card-ms942cfg05a8a",
       "front": "Code (Quelltext)",
       "back": "Der von Menschen geschriebene Text mit Anweisungen in einer Programmiersprache.",
       "notes": "Code beschreibt Schritt für Schritt, was der Computer tun soll.",
@@ -27,6 +29,7 @@
     },
     {
       "id": "it-quellcode",
+      "stable_id": "card-ms942cfg05bzc",
       "front": "Quellcode (source code)",
       "back": "Der ursprüngliche, lesbare Code eines Programms, so wie der Mensch ihn geschrieben hat.",
       "notes": "Aus dem Quellcode entsteht später das ausführbare Programm.",
@@ -36,6 +39,7 @@
     },
     {
       "id": "it-syntax",
+      "stable_id": "card-ms942cfg05cbp",
       "front": "Syntax",
       "back": "Die Grammatikregeln einer Programmiersprache — wie der Code richtig geschrieben werden muss.",
       "notes": "Ein Fehler dagegen heißt 'Syntaxfehler' (SyntaxError).",
@@ -45,6 +49,7 @@
     },
     {
       "id": "it-compiler",
+      "stable_id": "card-ms942cfg05dyg",
       "front": "Compiler",
       "back": "Ein Programm, das den gesamten Quellcode vorab in Maschinencode übersetzt, der dann ausgeführt wird.",
       "notes": "Beispiel: C und Java nutzen einen Übersetzungsschritt vor dem Ausführen.",
@@ -54,6 +59,7 @@
     },
     {
       "id": "it-interpreter-prog",
+      "stable_id": "card-ms942cfg05eb3",
       "front": "Interpreter",
       "back": "Ein Programm, das den Quellcode Zeile für Zeile liest und sofort ausführt.",
       "notes": "Beispiel: Python wird typischerweise interpretiert — ohne separaten Kompilier-Schritt.",
@@ -63,6 +69,7 @@
     },
     {
       "id": "it-maschinencode",
+      "stable_id": "card-ms942cfg05fiq",
       "front": "Maschinencode",
       "back": "Die Befehle in Nullen und Einsen, die der Prozessor direkt ausführen kann.",
       "notes": "Menschen schreiben Quellcode; der Computer braucht am Ende Maschinencode.",
@@ -72,6 +79,7 @@
     },
     {
       "id": "it-programm",
+      "stable_id": "card-ms942cfg05gjc",
       "front": "Programm",
       "back": "Eine fertige Sammlung von Anweisungen, die eine Aufgabe für den Computer erledigt.",
       "notes": "Auch 'Software' oder 'Anwendung' genannt.",
@@ -81,6 +89,7 @@
     },
     {
       "id": "it-algorithmus",
+      "stable_id": "card-ms942cfg05hv8",
       "front": "Algorithmus",
       "back": "Eine eindeutige, schrittweise Anleitung zur Lösung eines Problems.",
       "notes": "Ein Kochrezept ist ein gutes Alltagsbeispiel für einen Algorithmus.",
@@ -90,6 +99,7 @@
     },
     {
       "id": "it-bug",
+      "stable_id": "card-ms942cfg05ixj",
       "front": "Bug (Fehler)",
       "back": "Ein Fehler im Code, der dazu führt, dass ein Programm nicht wie gewünscht arbeitet.",
       "notes": "Das Suchen und Beheben heißt 'Debugging'.",
@@ -99,6 +109,7 @@
     },
     {
       "id": "it-funktion",
+      "stable_id": "card-ms942cfg05j5f",
       "front": "Funktion (function)",
       "back": "Ein benannter, wiederverwendbarer Code-Block, der eine bestimmte Aufgabe erledigt.",
       "notes": "Man schreibt sie einmal und ruft sie immer wieder auf.",
@@ -108,6 +119,7 @@
     },
     {
       "id": "it-kommentar",
+      "stable_id": "card-ms942cfg05kbf",
       "front": "Kommentar (comment)",
       "back": "Erklärender Text im Code, den der Computer ignoriert und der nur für Menschen gedacht ist.",
       "notes": "Kommentare erklären, WARUM der Code etwas tut.",
@@ -136,6 +148,7 @@
       "title": "Begriffe der Programmierung",
       "exercise": {
         "id": "ex-match-prog",
+        "stable_id": "ex-ms942cfg05lg5",
         "type": "matching",
         "prompt": "Ordne jedem Begriff die passende Beschreibung zu.",
         "card_ids": ["it-quellcode", "it-syntax", "it-algorithmus", "it-bug"],
@@ -155,6 +168,7 @@
       "title": "Vorab übersetzen",
       "exercise": {
         "id": "ex-free-compiler",
+        "stable_id": "ex-ms942cfg05mjc",
         "type": "free_text",
         "prompt": "Wie heißt das Programm, das den gesamten Quellcode vorab in Maschinencode übersetzt?",
         "card_ids": ["it-compiler"],
@@ -171,6 +185,7 @@
       "title": "Zeile für Zeile",
       "exercise": {
         "id": "ex-cloze-interpreter",
+        "stable_id": "ex-ms942cfg05nrn",
         "type": "cloze",
         "prompt": "Ergänze den Begriff für die Zeile-für-Zeile-Ausführung.",
         "card_ids": ["it-interpreter-prog"],
@@ -187,6 +202,7 @@
       "title": "Die Grammatikregeln",
       "exercise": {
         "id": "ex-free-syntax",
+        "stable_id": "ex-ms942cfg05o9t",
         "type": "free_text",
         "prompt": "Wie nennt man die Grammatikregeln einer Programmiersprache?",
         "card_ids": ["it-syntax"],
@@ -203,6 +219,7 @@
       "title": "Was ist ein Algorithmus?",
       "exercise": {
         "id": "ex-tiles-algorithmus",
+        "stable_id": "ex-ms942cfg05pxu",
         "type": "word_tiles",
         "prompt": "Setze die Definition zusammen.",
         "card_ids": ["it-algorithmus"],
@@ -218,6 +235,7 @@
       "title": "Was der Prozessor versteht",
       "exercise": {
         "id": "ex-cloze-maschinencode",
+        "stable_id": "ex-ms942cfg05qmh",
         "type": "cloze",
         "prompt": "Ergänze den Code, den der Prozessor direkt ausführt.",
         "card_ids": ["it-maschinencode"],
@@ -234,6 +252,7 @@
       "title": "Was schreibt der Mensch?",
       "exercise": {
         "id": "ex-pick-quellcode",
+        "stable_id": "ex-ms942cfg05run",
         "type": "picture_choice",
         "prompt": "Welchen Code schreibt ein Mensch direkt?",
         "card_ids": ["it-quellcode", "it-maschinencode"],
