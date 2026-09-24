@@ -1,6 +1,6 @@
 {
   "repo": "astrapi69/alc-technology",
-  "generated": "2026-07-31T16:08:58Z",
+  "generated": "2026-09-24T06:33:21Z",
   "schema_version": "1.0",
   "sets": [
     {
@@ -23,7 +23,7 @@
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
-      "updated_at": "2026-07-31T17:47:51+02:00"
+      "updated_at": "2026-07-31T15:47:51Z"
     },
     {
       "id": "ansible-qe-from-de",
@@ -46,7 +46,7 @@
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
-      "updated_at": "2026-07-31T17:47:51+02:00"
+      "updated_at": "2026-07-31T15:47:51Z"
     }
   ],
   "total_lessons": 18,
