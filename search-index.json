@@ -1,12 +1,12 @@
 {
   "repo": "astrapi69/alc-technology",
-  "generated": "2026-09-24T06:33:21Z",
+  "generated": "2026-10-01T11:13:58Z",
   "schema_version": "1.0",
   "sets": [
     {
       "id": "it-grundlagen-from-de",
       "name": "IT-Grundlagen",
-      "description": "Zehn Einführungslektionen in IT und Programmierung, auf Deutsch erklärt — von Hardware und Betriebssystemen bis zu Web-Grundlagen und IT-Sicherheit, mit den englischen Fachbegriffen in Klammern.",
+      "description": "Zehn Einführungslektionen in IT und Programmierung, auf Deutsch erklärt, von Hardware und Betriebssystemen bis zu Web-Grundlagen und IT-Sicherheit, mit den englischen Fachbegriffen in Klammern.",
       "source_language": "de",
       "target_language": "de",
       "level": "a1",
@@ -23,7 +23,7 @@
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
-      "updated_at": "2026-07-31T15:47:51Z"
+      "updated_at": "2026-10-01T11:13:43Z"
     },
     {
       "id": "ansible-qe-from-de",
@@ -46,7 +46,7 @@
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
-      "updated_at": "2026-07-31T15:47:51Z"
+      "updated_at": "2026-10-01T11:13:43Z"
     }
   ],
   "total_lessons": 18,
