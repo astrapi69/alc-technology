@@ -1,7 +1,7 @@
 {
   "id": "08-handlers-jinja2-templates",
   "title": "Handlers und Jinja2-Templates",
-  "description": "Über einfache Tasks hinaus: Handlers, die nur bei Änderung über notify ausgelöst werden, und das template-Modul, das Konfigurationsdateien dynamisch aus Jinja2-Vorlagen erzeugt — mit Variablen, Schleifen und Bedingungen.",
+  "description": "Über einfache Tasks hinaus: Handlers, die nur bei Änderung über notify ausgelöst werden, und das template-Modul, das Konfigurationsdateien dynamisch aus Jinja2-Vorlagen erzeugt, mit Variablen, Schleifen und Bedingungen.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -133,13 +133,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Handlers",
-      "body": "# Handlers\n\nManche Aktionen sollen **nur dann** laufen, wenn sich wirklich etwas geändert hat — etwa ein Dienst-Neustart nach einer Konfigurationsänderung. Genau dafür gibt es **Handlers**.\n\n```yaml\ntasks:\n  - name: Nginx-Konfiguration ausrollen\n    ansible.builtin.template:\n      src: nginx.conf.j2\n      dest: /etc/nginx/nginx.conf\n    notify: Nginx neu starten\n\nhandlers:\n  - name: Nginx neu starten\n    ansible.builtin.service:\n      name: nginx\n      state: restarted\n```\n\n**`notify`** löst den Handler nur aus, wenn der Task **`changed`** meldet. Handler laufen gesammelt **am Ende des Plays** und jeder höchstens **einmal** — auch bei mehreren notifys. Der Handler-Name muss exakt dem notify-Wert entsprechen."
+      "body": "# Handlers\n\nManche Aktionen sollen **nur dann** laufen, wenn sich wirklich etwas geändert hat, etwa ein Dienst-Neustart nach einer Konfigurationsänderung. Genau dafür gibt es **Handlers**.\n\n```yaml\ntasks:\n  - name: Nginx-Konfiguration ausrollen\n    ansible.builtin.template:\n      src: nginx.conf.j2\n      dest: /etc/nginx/nginx.conf\n    notify: Nginx neu starten\n\nhandlers:\n  - name: Nginx neu starten\n    ansible.builtin.service:\n      name: nginx\n      state: restarted\n```\n\n**`notify`** löst den Handler nur aus, wenn der Task **`changed`** meldet. Handler laufen gesammelt **am Ende des Plays** und jeder höchstens **einmal**, auch bei mehreren notifys. Der Handler-Name muss exakt dem notify-Wert entsprechen."
     },
     {
       "id": "templates",
       "type": "theory",
       "title": "Jinja2-Templates",
-      "body": "## Konfiguration dynamisch erzeugen\n\nDas **`template`**-Modul rendert eine **Jinja2**-Vorlage (Endung `.j2`) und schreibt das Ergebnis als Datei — wie `copy`, aber mit Variablen-Ersetzung.\n\nIn Jinja2 gibt es zwei Klammertypen:\n\n- `{{ ... }}` — **gibt einen Wert aus**: `listen {{ app_port }};`\n- `{% ... %}` — **steuert die Logik** (Schleifen, Bedingungen):\n\n```jinja2\nupstream backend {\n{% for server in backends %}\n  server {{ server }};\n{% endfor %}\n}\n{% if tls_enabled %}\nlisten 443 ssl;\n{% endif %}\n```\n\nMerke den häufigsten Fehler: **`{{ }}` für Werte, `{% %}` für Logik** — nicht vertauschen."
+      "body": "## Konfiguration dynamisch erzeugen\n\nDas **`template`**-Modul rendert eine **Jinja2**-Vorlage (Endung `.j2`) und schreibt das Ergebnis als Datei, wie `copy`, aber mit Variablen-Ersetzung.\n\nIn Jinja2 gibt es zwei Klammertypen:\n\n- `{{ ... }}` - **gibt einen Wert aus**: `listen {{ app_port }};`\n- `{% ... %}` - **steuert die Logik** (Schleifen, Bedingungen):\n\n```jinja2\nupstream backend {\n{% for server in backends %}\n  server {{ server }};\n{% endfor %}\n}\n{% if tls_enabled %}\nlisten 443 ssl;\n{% endif %}\n```\n\nMerke den häufigsten Fehler: **`{{ }}` für Werte, `{% %}` für Logik**, nicht vertauschen."
     },
     {
       "id": "ex-cloze-notify",
@@ -222,7 +222,7 @@
         "prompt": "Welchen Status muss ein Task melden, damit das zugehörige notify den Handler tatsächlich auslöst?",
         "card_ids": ["card-02", "card-04"],
         "accept": ["changed", "den Status changed", "Status changed", "Der Task muss changed sein"],
-        "hint": "Bleibt der Task 'ok', passiert nichts — es braucht eine echte Änderung.",
+        "hint": "Bleibt der Task 'ok', passiert nichts, es braucht eine echte Änderung.",
         "distractors": ["ok", "failed", "skipped"],
         "direction": "source_to_target"
       }
@@ -238,7 +238,7 @@
         "prompt": "Du willst eine Konfigurationsdatei ausrollen, in der Variablen wie der Port dynamisch eingesetzt werden. Welches Modul nimmst du?",
         "card_ids": ["card-05", "card-11"],
         "accept": ["template", "das template-Modul", "ansible.builtin.template"],
-        "hint": "copy überträgt unverändert — du brauchst Variablen-Ersetzung.",
+        "hint": "copy überträgt unverändert, du brauchst Variablen-Ersetzung.",
         "distractors": ["copy", "file", "shell"],
         "direction": "source_to_target"
       }

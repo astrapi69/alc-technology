@@ -1,7 +1,7 @@
 {
   "id": "10-it-sicherheit-grundlagen",
   "title": "IT-Sicherheit Grundlagen",
-  "description": "Wie man sich digital schützt: Passwort, Verschlüsselung, Phishing, Firewall, Zwei-Faktor-Authentifizierung und Malware — auf Deutsch erklärt.",
+  "description": "Wie man sich digital schützt: Passwort, Verschlüsselung, Phishing, Firewall, Zwei-Faktor-Authentifizierung und Malware, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -123,13 +123,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Zugang schützen: Passwort, 2FA, Verschlüsselung",
-      "body": "# IT-Sicherheit — Grundlagen\n\n**IT-Sicherheit** umfasst alle Maßnahmen, die **Daten und Systeme** vor unbefugtem Zugriff, Verlust und Schaden schützen.\n\n## Zugang schützen\n\n- Ein **Passwort** ist ein geheimes Kennwort. Sicher heißt: **lang** und gemischt aus Buchstaben, Zahlen und Sonderzeichen. Ein **Passwortmanager** speichert viele starke Passwörter für dich.\n- Die **Zwei-Faktor-Authentifizierung (2FA)** verlangt **zusätzlich** zum Passwort einen zweiten Nachweis (z. B. einen Code aufs Handy). Selbst ein gestohlenes Passwort reicht dann nicht.\n\n## Daten schützen\n\n- **Verschlüsselung (encryption)** wandelt Daten in eine **unlesbare Form** um, die nur mit dem richtigen **Schlüssel** wieder lesbar ist. So schützt z. B. HTTPS den Webverkehr."
+      "body": "# IT-Sicherheit - Grundlagen\n\n**IT-Sicherheit** umfasst alle Maßnahmen, die **Daten und Systeme** vor unbefugtem Zugriff, Verlust und Schaden schützen.\n\n## Zugang schützen\n\n- Ein **Passwort** ist ein geheimes Kennwort. Sicher heißt: **lang** und gemischt aus Buchstaben, Zahlen und Sonderzeichen. Ein **Passwortmanager** speichert viele starke Passwörter für dich.\n- Die **Zwei-Faktor-Authentifizierung (2FA)** verlangt **zusätzlich** zum Passwort einen zweiten Nachweis (z. B. einen Code aufs Handy). Selbst ein gestohlenes Passwort reicht dann nicht.\n\n## Daten schützen\n\n- **Verschlüsselung (encryption)** wandelt Daten in eine **unlesbare Form** um, die nur mit dem richtigen **Schlüssel** wieder lesbar ist. So schützt z. B. HTTPS den Webverkehr."
     },
     {
       "id": "step-bedrohungen",
       "type": "theory",
       "title": "Bedrohungen und Schutzmaßnahmen",
-      "body": "## Typische Bedrohungen\n\n- **Phishing** — gefälschte Nachrichten (oft E-Mails mit Links), die dich zur Herausgabe von Passwörtern verleiten wollen.\n- **Malware (Schadsoftware)** — Software, die absichtlich Schaden anrichtet. Ein **Virus** ist eine Form davon: Er hängt sich an Dateien und verbreitet sich weiter.\n\n## Schutzmaßnahmen\n\n- Eine **Firewall** überwacht den Netzwerkverkehr und blockiert unerwünschte Verbindungen — wie ein Türsteher.\n- **Updates** schließen Sicherheitslücken in Software.\n- **Backups (Datensicherungen)** sind Kopien, mit denen du Daten nach einem Verlust wiederherstellen kannst."
+      "body": "## Typische Bedrohungen\n\n- **Phishing**: gefälschte Nachrichten (oft E-Mails mit Links), die dich zur Herausgabe von Passwörtern verleiten wollen.\n- **Malware (Schadsoftware)**: Software, die absichtlich Schaden anrichtet. Ein **Virus** ist eine Form davon: Er hängt sich an Dateien und verbreitet sich weiter.\n\n## Schutzmaßnahmen\n\n- Eine **Firewall** überwacht den Netzwerkverkehr und blockiert unerwünschte Verbindungen, wie ein Türsteher.\n- **Updates** schließen Sicherheitslücken in Software.\n- **Backups (Datensicherungen)** sind Kopien, mit denen du Daten nach einem Verlust wiederherstellen kannst."
     },
     {
       "id": "ex-match-sicherheit",

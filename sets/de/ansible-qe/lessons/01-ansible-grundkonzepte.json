@@ -125,7 +125,7 @@
       "id": "intro",
       "type": "theory",
       "title": "Was ist Ansible?",
-      "body": "# Ansible-Grundkonzepte\n\n**Ansible** ist ein Open-Source-Werkzeug, mit dem du die Konfiguration von Servern, das Ausrollen von Software und ganze Abläufe automatisierst. Statt jeden Schritt von Hand auszuführen, beschreibst du den gewünschten **Soll-Zustand** in YAML.\n\nZwei Eigenschaften sind für Quality Engineering besonders wichtig:\n\n- **Agentenlos:** Auf den Zielsystemen läuft kein dauerhafter Agent. Ansible verbindet sich per **SSH** und braucht dort nur Python.\n- **Idempotent:** Ein Playbook kannst du gefahrlos mehrfach ausführen. Ist der Zustand schon korrekt, ändert Ansible nichts — ideal, um Testumgebungen reproduzierbar herzustellen."
+      "body": "# Ansible-Grundkonzepte\n\n**Ansible** ist ein Open-Source-Werkzeug, mit dem du die Konfiguration von Servern, das Ausrollen von Software und ganze Abläufe automatisierst. Statt jeden Schritt von Hand auszuführen, beschreibst du den gewünschten **Soll-Zustand** in YAML.\n\nZwei Eigenschaften sind für Quality Engineering besonders wichtig:\n\n- **Agentenlos:** Auf den Zielsystemen läuft kein dauerhafter Agent. Ansible verbindet sich per **SSH** und braucht dort nur Python.\n- **Idempotent:** Ein Playbook kannst du gefahrlos mehrfach ausführen. Ist der Zustand schon korrekt, ändert Ansible nichts, ideal, um Testumgebungen reproduzierbar herzustellen."
     },
     {
       "id": "bausteine",

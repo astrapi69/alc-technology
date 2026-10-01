@@ -1,7 +1,7 @@
 {
   "id": "06-testumgebungen-aufsetzen-bereinigen",
   "title": "Testumgebungen aufsetzen und bereinigen",
-  "description": "Praxisnahes QA-Szenario: eine Testumgebung mit Ansible reproduzierbar aufsetzen (Pakete, Dateien, Dienste), Tests ausführen und anschließend sauber bereinigen — mit Modulen wie apt, copy, file, service und dem state-Konzept.",
+  "description": "Praxisnahes QA-Szenario: eine Testumgebung mit Ansible reproduzierbar aufsetzen (Pakete, Dateien, Dienste), Tests ausführen und anschließend sauber bereinigen, mit Modulen wie apt, copy, file, service und dem state-Konzept.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -131,7 +131,7 @@
       "id": "intro",
       "type": "theory",
       "title": "Setup und Teardown",
-      "body": "# Testumgebungen mit Ansible\n\nFür verlässliche Tests brauchst du bei jedem Lauf **dieselbe Ausgangslage**. Mit Ansible bildest du den klassischen QA-Zyklus ab:\n\n1. **Setup** — Umgebung herstellen: Pakete installieren, Dateien kopieren, Dienste starten.\n2. **Test** — die eigentlichen Prüfungen ausführen (siehe Lektion zu Testing-Modulen).\n3. **Teardown** — alles wieder bereinigen, damit keine Reste den nächsten Lauf verfälschen.\n\nWeil Ansible **idempotent** arbeitet, ist das Setup gefahrlos wiederholbar."
+      "body": "# Testumgebungen mit Ansible\n\nFür verlässliche Tests brauchst du bei jedem Lauf **dieselbe Ausgangslage**. Mit Ansible bildest du den klassischen QA-Zyklus ab:\n\n1. **Setup**: Umgebung herstellen: Pakete installieren, Dateien kopieren, Dienste starten.\n2. **Test**: die eigentlichen Prüfungen ausführen (siehe Lektion zu Testing-Modulen).\n3. **Teardown**: alles wieder bereinigen, damit keine Reste den nächsten Lauf verfälschen.\n\nWeil Ansible **idempotent** arbeitet, ist das Setup gefahrlos wiederholbar."
     },
     {
       "id": "state",
@@ -190,7 +190,7 @@
         "sentence": "- ansible.builtin.file:\n    path: /opt/testdata\n    state: ___",
         "blanks": [{"accept": ["absent"]}],
         "cloze_mode": "type",
-        "hint": "Englisch für 'abwesend' — das Gegenteil von present."
+        "hint": "Englisch für 'abwesend' - das Gegenteil von present."
       }
     },
     {

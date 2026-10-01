@@ -129,7 +129,7 @@
       "id": "intro",
       "type": "theory",
       "title": "YAML in drei Regeln",
-      "body": "# YAML-Syntax\n\nPlaybooks sind **YAML**. Drei Regeln tragen dich weit:\n\n1. **Einrückung mit Leerzeichen** (nie Tabs). Gleiche Ebene = gleiche Einrückung.\n2. **Listen** beginnen mit `- ` (Bindestrich + Leerzeichen).\n3. **Schlüssel-Wert-Paare** schreibt man `schluessel: wert` — das **Leerzeichen nach dem Doppelpunkt** ist Pflicht.\n\nFalsche Einrückung ist der häufigste Fehler. Prüfe vor dem Ausführen mit `ansible-playbook --syntax-check site.yml`."
+      "body": "# YAML-Syntax\n\nPlaybooks sind **YAML**. Drei Regeln tragen dich weit:\n\n1. **Einrückung mit Leerzeichen** (nie Tabs). Gleiche Ebene = gleiche Einrückung.\n2. **Listen** beginnen mit `- ` (Bindestrich + Leerzeichen).\n3. **Schlüssel-Wert-Paare** schreibt man `schluessel: wert` - das **Leerzeichen nach dem Doppelpunkt** ist Pflicht.\n\nFalsche Einrückung ist der häufigste Fehler. Prüfe vor dem Ausführen mit `ansible-playbook --syntax-check site.yml`."
     },
     {
       "id": "struktur",
@@ -201,7 +201,7 @@
         "pairs": [
           {"left": "Einrückung", "right": "nur Leerzeichen, keine Tabs"},
           {"left": "Listeneintrag", "right": "beginnt mit '- '"},
-          {"left": "Mapping", "right": "schluessel: wert mit Leerzeichen danach"},
+          {"left": "Mapping", "right": "`schluessel: wert` mit Leerzeichen danach"},
           {"left": "---", "right": "markiert den Dokumentbeginn"}
         ],
         "direction": "target_to_source"
@@ -218,7 +218,7 @@
         "prompt": "Womit darf in YAML NICHT eingerückt werden? Nenne das Zeichen/die Taste.",
         "card_ids": ["card-02"],
         "accept": ["Tabs", "Tab", "Tabulator", "mit Tabs", "Tabulatoren"],
-        "hint": "Erlaubt sind nur Leerzeichen — das Gegenstück davon ist untersagt.",
+        "hint": "Erlaubt sind nur Leerzeichen, das Gegenstück davon ist untersagt.",
         "distractors": ["Leerzeichen", "Bindestriche", "Doppelpunkte"],
         "direction": "source_to_target"
       }

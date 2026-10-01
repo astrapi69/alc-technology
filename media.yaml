@@ -1,4 +1,4 @@
-# media.yaml — curated free supplementary media per domain (EXP-029).
+# media.yaml - curated free supplementary media per domain (EXP-029).
 #
 # Optional companion to the lesson catalogue and to books.yaml: maps a
 # content domain to a list of free, openly accessible media (videos,
@@ -25,7 +25,7 @@
 #         every other entry defaults to ``priority: 10``.
 
 technology:
-  - title: "The Morpheus Tutorials — Programmieren lernen"
+  - title: "The Morpheus Tutorials - Programmieren lernen"
     type: youtube
     set: it-grundlagen-from-de
     url: "https://www.youtube.com/@TheMorpheusTutorials"
@@ -34,7 +34,7 @@ technology:
     description: >-
       Umfangreicher deutschsprachiger Kanal zu Programmierung und
       Informatik-Grundlagen (Variablen, Kontrollstrukturen,
-      Datenbanken, Git, Web) — passend zum IT-Grundlagen-Set.
+      Datenbanken, Git, Web) - passend zum IT-Grundlagen-Set.
   - title: "Crash Course Computer Science"
     type: youtube
     url: "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo"
@@ -43,7 +43,7 @@ technology:
     description: >-
       Englische 40-teilige Reihe zu den Grundlagen der Informatik:
       von Hardware und Betriebssystemen über Netzwerke bis zu
-      Sicherheit — eine gute visuelle Ergänzung.
+      Sicherheit, eine gute visuelle Ergänzung.
   - title: "Informatik (Wikipedia)"
     type: article
     url: "https://de.wikipedia.org/wiki/Informatik"
@@ -51,8 +51,8 @@ technology:
     level: beginner
     description: >-
       Deutschsprachiger Überblick über die Informatik und ihre
-      Teilgebiete — Kontext zum IT-Grundlagen-Set.
-  - title: "Ansible for Beginners — Full Course"
+      Teilgebiete, Kontext zum IT-Grundlagen-Set.
+  - title: "Ansible for Beginners - Full Course"
     type: youtube
     set: ansible-qe-from-de
     url: "https://www.youtube.com/watch?v=3RiVKs8GHYQ"
@@ -60,5 +60,5 @@ technology:
     level: intermediate
     description: >-
       Einsteigerfreundliches Komplett-Tutorial zu Ansible (freeCodeCamp):
-      Inventory, Playbooks, Module, Variablen und Templates — gute
+      Inventory, Playbooks, Module, Variablen und Templates, gute
       Ergänzung zum Ansible-QE-Set, besonders zu den Lektionen 1, 2 und 8.

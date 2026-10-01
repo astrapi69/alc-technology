@@ -1,7 +1,7 @@
 {
   "id": "08-versionsverwaltung",
   "title": "Versionsverwaltung",
-  "description": "Wie man Änderungen am Code nachverfolgt: Git, Commit, Repository, Branch, Merge sowie Push und Pull — auf Deutsch erklärt.",
+  "description": "Wie man Änderungen am Code nachverfolgt: Git, Commit, Repository, Branch, Merge sowie Push und Pull, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -123,13 +123,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Git, Repository und Commit",
-      "body": "# Versionsverwaltung\n\n**Versionsverwaltung (version control)** zeichnet **alle Änderungen** an Dateien über die Zeit auf. So kann man frühere Stände wiederherstellen und sehen, wer was wann geändert hat. Das verbreitetste System ist **Git**.\n\n## Grundbegriffe\n\n- Ein **Repository (Repo)** ist der Speicherort eines Projekts samt **kompletter Änderungsgeschichte**. Mit **Clone** holt man sich eine lokale Kopie.\n- Ein **Commit** ist ein **Schnappschuss** der Änderungen — meist mit einer kurzen **Commit-Nachricht**, die erklärt, was sich geändert hat."
+      "body": "# Versionsverwaltung\n\n**Versionsverwaltung (version control)** zeichnet **alle Änderungen** an Dateien über die Zeit auf. So kann man frühere Stände wiederherstellen und sehen, wer was wann geändert hat. Das verbreitetste System ist **Git**.\n\n## Grundbegriffe\n\n- Ein **Repository (Repo)** ist der Speicherort eines Projekts samt **kompletter Änderungsgeschichte**. Mit **Clone** holt man sich eine lokale Kopie.\n- Ein **Commit** ist ein **Schnappschuss** der Änderungen, meist mit einer kurzen **Commit-Nachricht**, die erklärt, was sich geändert hat."
     },
     {
       "id": "step-branch-remote",
       "type": "theory",
       "title": "Branch, Merge, Push und Pull",
-      "body": "## Parallel arbeiten\n\nEin **Branch (Zweig)** ist eine **parallele Entwicklungslinie**. Auf ihm kann man an einer neuen Funktion arbeiten, ohne den Hauptzweig zu stören. Mit einem **Merge** führt man die Änderungen wieder zusammen. Ändern zwei Branches dieselbe Stelle unterschiedlich, entsteht ein **Merge-Konflikt**, den ein Mensch lösen muss.\n\n## Mit anderen teilen\n\n- **Push** — lokale Commits **hochladen** (z. B. zu GitHub).\n- **Pull** — Änderungen anderer **herunterladen** und einbinden.\n\nMerksatz: Push schiebt **hoch**, Pull zieht **herunter**."
+      "body": "## Parallel arbeiten\n\nEin **Branch (Zweig)** ist eine **parallele Entwicklungslinie**. Auf ihm kann man an einer neuen Funktion arbeiten, ohne den Hauptzweig zu stören. Mit einem **Merge** führt man die Änderungen wieder zusammen. Ändern zwei Branches dieselbe Stelle unterschiedlich, entsteht ein **Merge-Konflikt**, den ein Mensch lösen muss.\n\n## Mit anderen teilen\n\n- **Push**: lokale Commits **hochladen** (z. B. zu GitHub).\n- **Pull**: Änderungen anderer **herunterladen** und einbinden.\n\nMerksatz: Push schiebt **hoch**, Pull zieht **herunter**."
     },
     {
       "id": "ex-match-git",

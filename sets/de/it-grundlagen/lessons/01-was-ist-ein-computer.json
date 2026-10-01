@@ -1,7 +1,7 @@
 {
   "id": "01-was-ist-ein-computer",
   "title": "Was ist ein Computer?",
-  "description": "Die wichtigsten Hardware-Bauteile eines Computers: CPU, RAM, Festplatte/SSD, Mainboard, GPU sowie Eingabe- und Ausgabegeräte — auf Deutsch erklärt.",
+  "description": "Die wichtigsten Hardware-Bauteile eines Computers: CPU, RAM, Festplatte/SSD, Mainboard, GPU sowie Eingabe- und Ausgabegeräte, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -21,7 +21,7 @@
       "id": "it-hardware",
       "stable_id": "card-ms942cfe03oqv",
       "front": "Hardware",
-      "back": "Alle physischen, anfassbaren Teile eines Computers — zum Beispiel Bildschirm, Tastatur und die Bauteile im Inneren.",
+      "back": "Alle physischen, anfassbaren Teile eines Computers, zum Beispiel Bildschirm, Tastatur und die Bauteile im Inneren.",
       "notes": "Gegenstück ist die Software: die Programme, die man nicht anfassen kann.",
       "media_type": "text",
       "difficulty": 1,
@@ -121,7 +121,7 @@
       "id": "it-bit",
       "stable_id": "card-ms942cfe03yfi",
       "front": "Bit",
-      "back": "Die kleinste Informationseinheit im Computer — sie hat den Wert 0 oder 1.",
+      "back": "Die kleinste Informationseinheit im Computer, sie hat den Wert 0 oder 1.",
       "notes": "8 Bit ergeben 1 Byte. Computer rechnen intern nur mit 0 und 1 (binär).",
       "media_type": "text",
       "difficulty": 2,
@@ -133,13 +133,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Hardware: die Bauteile eines Computers",
-      "body": "# Was ist ein Computer?\n\nEin **Computer** ist ein elektronisches Gerät, das **Daten** nach Anweisungen verarbeitet, speichert und ausgibt. Alle anfassbaren Teile zusammen nennt man **Hardware**.\n\nDie wichtigsten Bauteile:\n\n| Bauteil | Aufgabe |\n|---|---|\n| **Prozessor (CPU)** | rechnet und führt Anweisungen aus — das 'Gehirn' |\n| **Arbeitsspeicher (RAM)** | hält laufende Programme kurzfristig bereit |\n| **Festplatte / SSD** | speichert Daten dauerhaft |\n| **Mainboard** | verbindet alle Bauteile |\n| **Grafikkarte (GPU)** | berechnet Bilder und Grafik |\n\nDie **CPU** ist sehr schnell, hat aber selbst kaum Speicher. Der **RAM** ist schnell, aber **flüchtig**: Beim Ausschalten ist sein Inhalt weg. Die **Festplatte** oder die schnellere **SSD** behält Daten dagegen dauerhaft."
+      "body": "# Was ist ein Computer?\n\nEin **Computer** ist ein elektronisches Gerät, das **Daten** nach Anweisungen verarbeitet, speichert und ausgibt. Alle anfassbaren Teile zusammen nennt man **Hardware**.\n\nDie wichtigsten Bauteile:\n\n| Bauteil | Aufgabe |\n|---|---|\n| **Prozessor (CPU)** | rechnet und führt Anweisungen aus, das 'Gehirn' |\n| **Arbeitsspeicher (RAM)** | hält laufende Programme kurzfristig bereit |\n| **Festplatte / SSD** | speichert Daten dauerhaft |\n| **Mainboard** | verbindet alle Bauteile |\n| **Grafikkarte (GPU)** | berechnet Bilder und Grafik |\n\nDie **CPU** ist sehr schnell, hat aber selbst kaum Speicher. Der **RAM** ist schnell, aber **flüchtig**: Beim Ausschalten ist sein Inhalt weg. Die **Festplatte** oder die schnellere **SSD** behält Daten dagegen dauerhaft."
     },
     {
       "id": "step-ein-ausgabe",
       "type": "theory",
       "title": "Ein- und Ausgabe, Hardware und Software",
-      "body": "## Mensch und Computer\n\nDamit wir mit dem Computer arbeiten können, gibt es:\n\n- **Eingabegeräte (input)** — wir geben Daten ein: Tastatur, Maus, Mikrofon.\n- **Ausgabegeräte (output)** — der Computer zeigt uns Daten: Bildschirm, Drucker, Lautsprecher.\n\n## Hardware vs. Software\n\n- **Hardware** = die anfassbaren Teile.\n- **Software** = die Programme, die man nicht anfassen kann. Software steuert die Hardware.\n\nIntern rechnet jeder Computer nur mit zwei Zuständen: 0 und 1. Die kleinste Einheit dafür heißt **Bit**."
+      "body": "## Mensch und Computer\n\nDamit wir mit dem Computer arbeiten können, gibt es:\n\n- **Eingabegeräte (input)**: wir geben Daten ein: Tastatur, Maus, Mikrofon.\n- **Ausgabegeräte (output)**: der Computer zeigt uns Daten: Bildschirm, Drucker, Lautsprecher.\n\n## Hardware vs. Software\n\n- **Hardware** = die anfassbaren Teile.\n- **Software** = die Programme, die man nicht anfassen kann. Software steuert die Hardware.\n\nIntern rechnet jeder Computer nur mit zwei Zuständen: 0 und 1. Die kleinste Einheit dafür heißt **Bit**."
     },
     {
       "id": "ex-match-bauteile",
@@ -171,10 +171,10 @@
         "id": "ex-free-cpu",
         "stable_id": "ex-ms942cfe040x6",
         "type": "free_text",
-        "prompt": "Wie heißt das Bauteil, das rechnet und Anweisungen ausführt — oft das 'Gehirn' des Computers genannt?",
+        "prompt": "Wie heißt das Bauteil, das rechnet und Anweisungen ausführt, oft das 'Gehirn' des Computers genannt?",
         "card_ids": ["it-cpu"],
         "accept": ["CPU", "Prozessor", "der Prozessor", "die CPU"],
-        "hint": "Englische Abkürzung — das C steht für 'Central'.",
+        "hint": "Englische Abkürzung, das C steht für 'Central'.",
         "distractors": ["RAM", "GPU", "Festplatte"],
         "direction": "target_to_source"
       }
