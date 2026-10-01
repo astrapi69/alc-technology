@@ -1,7 +1,7 @@
 {
   "id": "05-variablen-und-datentypen",
   "title": "Variablen und Datentypen",
-  "description": "Was Variablen sind und welche grundlegenden Datentypen es gibt: Integer, String, Boolean und Float — auf Deutsch erklärt.",
+  "description": "Was Variablen sind und welche grundlegenden Datentypen es gibt: Integer, String, Boolean und Float, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -31,7 +31,7 @@
       "id": "it-datentyp",
       "stable_id": "card-ms942cfg05uqa",
       "front": "Datentyp (data type)",
-      "back": "Die Art eines Wertes, die festlegt, was man damit tun kann — z. B. Zahl oder Text.",
+      "back": "Die Art eines Wertes, die festlegt, was man damit tun kann, z. B. Zahl oder Text.",
       "notes": "Mit Zahlen kann man rechnen, mit Text nicht.",
       "media_type": "text",
       "difficulty": 2,
@@ -61,7 +61,7 @@
       "id": "it-string-typ",
       "stable_id": "card-ms942cfg05xs7",
       "front": "String (str)",
-      "back": "Ein Datentyp für Text — eine Zeichenkette, die in Anführungszeichen steht.",
+      "back": "Ein Datentyp für Text, eine Zeichenkette, die in Anführungszeichen steht.",
       "notes": "Beispiel: 'Hallo'. 'String' heißt wörtlich 'Kette' (von Zeichen).",
       "media_type": "text",
       "difficulty": 2,
@@ -129,7 +129,7 @@
       "id": "step-datentypen",
       "type": "theory",
       "title": "Die wichtigsten Datentypen",
-      "body": "## Datentypen\n\nJeder Wert hat einen **Datentyp**. Er legt fest, was man mit dem Wert tun kann. Die wichtigsten Grundtypen:\n\n| Datentyp | Bedeutung | Beispiel |\n|---|---|---|\n| **Integer (int)** | ganze Zahl | `7`, `-42` |\n| **Float** | Zahl mit Nachkommastellen | `3.14` |\n| **String (str)** | Text in Anführungszeichen | `'Hallo'` |\n| **Boolean (bool)** | wahr oder falsch | `true`, `false` |\n\nMit Zahlen (int, float) kann man rechnen, mit einem String nicht. Manchmal muss man einen Wert von einem Typ in einen anderen umwandeln — das ist eine **Typumwandlung**, z. B. aus dem Text `'5'` die Zahl `5`."
+      "body": "## Datentypen\n\nJeder Wert hat einen **Datentyp**. Er legt fest, was man mit dem Wert tun kann. Die wichtigsten Grundtypen:\n\n| Datentyp | Bedeutung | Beispiel |\n|---|---|---|\n| **Integer (int)** | ganze Zahl | `7`, `-42` |\n| **Float** | Zahl mit Nachkommastellen | `3.14` |\n| **String (str)** | Text in Anführungszeichen | `'Hallo'` |\n| **Boolean (bool)** | wahr oder falsch | `true`, `false` |\n\nMit Zahlen (int, float) kann man rechnen, mit einem String nicht. Manchmal muss man einen Wert von einem Typ in einen anderen umwandeln, das ist eine **Typumwandlung**, z. B. aus dem Text `'5'` die Zahl `5`."
     },
     {
       "id": "ex-match-datentypen",

@@ -1,7 +1,7 @@
 {
   "id": "09-web-grundlagen",
   "title": "Web-Grundlagen",
-  "description": "Wie das Web aufgebaut ist: HTML, CSS, JavaScript, Browser, URL sowie Frontend und Backend — auf Deutsch erklärt.",
+  "description": "Wie das Web aufgebaut ist: HTML, CSS, JavaScript, Browser, URL sowie Frontend und Backend, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -61,7 +61,7 @@
       "id": "it-css",
       "stable_id": "card-ms942cfi07x8d",
       "front": "CSS",
-      "back": "Die Sprache, die das Aussehen einer Webseite gestaltet — Farben, Schriften und Layout.",
+      "back": "Die Sprache, die das Aussehen einer Webseite gestaltet, Farben, Schriften und Layout.",
       "notes": "CSS steht für 'Cascading Style Sheets'. Es ist für das Design zuständig.",
       "media_type": "text",
       "difficulty": 2,
@@ -81,7 +81,7 @@
       "id": "it-frontend",
       "stable_id": "card-ms942cfi07z4r",
       "front": "Frontend",
-      "back": "Der Teil einer Anwendung, den der Nutzer sieht und bedient — die Oberfläche im Browser.",
+      "back": "Der Teil einer Anwendung, den der Nutzer sieht und bedient, die Oberfläche im Browser.",
       "notes": "Wird vor allem mit HTML, CSS und JavaScript gebaut.",
       "media_type": "text",
       "difficulty": 2,
@@ -102,7 +102,7 @@
       "stable_id": "card-ms942cfi08180",
       "front": "Hyperlink (Link)",
       "back": "Ein anklickbarer Verweis, der zu einer anderen Webseite oder Stelle führt.",
-      "notes": "Links verbinden die Webseiten zu einem Netz — daher der Name 'Web'.",
+      "notes": "Links verbinden die Webseiten zu einem Netz, daher der Name 'Web'.",
       "media_type": "text",
       "difficulty": 1,
       "tags": ["web", "grundlagen"]
@@ -123,13 +123,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Browser, URL und das Web",
-      "body": "# Web-Grundlagen\n\nDas **Web (World Wide Web)** ist der Dienst aus untereinander **verlinkten Webseiten**, der über das **Internet** läuft. Eine einzelne **Webseite** wird in einem **Browser** (z. B. Firefox oder Chrome) angezeigt.\n\nJede Ressource im Web hat eine Adresse — die **URL** (Uniform Resource Locator), z. B. `https://beispiel.de/seite`. **Hyperlinks (Links)** verbinden die Seiten miteinander; daher der Name 'Web' (Netz).\n\nGespeichert und ausgeliefert werden Webseiten von einem **Webserver**: Der Browser (Client) fragt an, der Webserver antwortet."
+      "body": "# Web-Grundlagen\n\nDas **Web (World Wide Web)** ist der Dienst aus untereinander **verlinkten Webseiten**, der über das **Internet** läuft. Eine einzelne **Webseite** wird in einem **Browser** (z. B. Firefox oder Chrome) angezeigt.\n\nJede Ressource im Web hat eine Adresse, die **URL** (Uniform Resource Locator), z. B. `https://beispiel.de/seite`. **Hyperlinks (Links)** verbinden die Seiten miteinander; daher der Name 'Web' (Netz).\n\nGespeichert und ausgeliefert werden Webseiten von einem **Webserver**: Der Browser (Client) fragt an, der Webserver antwortet."
     },
     {
       "id": "step-html-css-js",
       "type": "theory",
       "title": "HTML, CSS, JavaScript und Frontend/Backend",
-      "body": "## Die drei Web-Sprachen\n\nEine Webseite entsteht aus dem Zusammenspiel von drei Sprachen:\n\n| Sprache | Aufgabe | Vergleich |\n|---|---|---|\n| **HTML** | Struktur und Inhalt | das Gerüst / Skelett |\n| **CSS** | Aussehen: Farben, Schrift, Layout | die Kleidung |\n| **JavaScript** | Interaktion und Dynamik | die Muskeln/Bewegung |\n\n## Frontend und Backend\n\n- **Frontend** — was der Nutzer **sieht und bedient** (im Browser, mit HTML/CSS/JS).\n- **Backend** — was im **Hintergrund auf dem Server** läuft: Datenverarbeitung, Datenbank, Logik.\n\nHinweis: **JavaScript** hat trotz des Namens nichts mit **Java** zu tun."
+      "body": "## Die drei Web-Sprachen\n\nEine Webseite entsteht aus dem Zusammenspiel von drei Sprachen:\n\n| Sprache | Aufgabe | Vergleich |\n|---|---|---|\n| **HTML** | Struktur und Inhalt | das Gerüst / Skelett |\n| **CSS** | Aussehen: Farben, Schrift, Layout | die Kleidung |\n| **JavaScript** | Interaktion und Dynamik | die Muskeln/Bewegung |\n\n## Frontend und Backend\n\n- **Frontend**: was der Nutzer **sieht und bedient** (im Browser, mit HTML/CSS/JS).\n- **Backend**: was im **Hintergrund auf dem Server** läuft: Datenverarbeitung, Datenbank, Logik.\n\nHinweis: **JavaScript** hat trotz des Namens nichts mit **Java** zu tun."
     },
     {
       "id": "ex-match-web",

@@ -1,7 +1,7 @@
 {
   "id": "03-netzwerk-grundlagen",
   "title": "Netzwerk-Grundlagen",
-  "description": "Wie Computer im Netzwerk kommunizieren: IP-Adresse, DNS, HTTP/HTTPS, Router, Server und Client — auf Deutsch erklärt.",
+  "description": "Wie Computer im Netzwerk kommunizieren: IP-Adresse, DNS, HTTP/HTTPS, Router, Server und Client, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -133,13 +133,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Netzwerk, Adressen und Namen",
-      "body": "# Netzwerk-Grundlagen\n\nEin **Netzwerk** verbindet mehrere Computer, damit sie **Daten** austauschen können. Das weltweite Netzwerk ist das **Internet**.\n\nDamit ein Gerät erreichbar ist, hat es eine **IP-Adresse** — eine eindeutige Adresse wie `192.168.0.1`. Sie ist die Postadresse des Geräts.\n\nIP-Adressen sind schwer zu merken. Deshalb gibt es **Domains (Domainnamen)** wie `beispiel.de`. Der Dienst **DNS (Domain Name System)** funktioniert wie ein Telefonbuch und übersetzt die Domain in die passende IP-Adresse."
+      "body": "# Netzwerk-Grundlagen\n\nEin **Netzwerk** verbindet mehrere Computer, damit sie **Daten** austauschen können. Das weltweite Netzwerk ist das **Internet**.\n\nDamit ein Gerät erreichbar ist, hat es eine **IP-Adresse**, eine eindeutige Adresse wie `192.168.0.1`. Sie ist die Postadresse des Geräts.\n\nIP-Adressen sind schwer zu merken. Deshalb gibt es **Domains (Domainnamen)** wie `beispiel.de`. Der Dienst **DNS (Domain Name System)** funktioniert wie ein Telefonbuch und übersetzt die Domain in die passende IP-Adresse."
     },
     {
       "id": "step-kommunikation",
       "type": "theory",
       "title": "Server, Client, Router und Protokolle",
-      "body": "## Wer fragt, wer antwortet?\n\n- Ein **Client** fragt einen Dienst an (z. B. dein **Browser**).\n- Ein **Server** stellt den Dienst bereit und antwortet (z. B. ein Webserver mit einer Webseite).\n\nDie Daten reisen in kleinen **Datenpaketen** durch das Netzwerk. Ein **Router** leitet diese Pakete zwischen Netzwerken weiter und sucht den Weg zum Ziel.\n\n## Protokolle\n\nEin **Protokoll** ist ein Satz Regeln für die Kommunikation. Im Web sind das vor allem:\n\n- **HTTP** — überträgt Webseiten.\n- **HTTPS** — dasselbe, aber **verschlüsselt** und sicher (das 'S' steht für *Secure*)."
+      "body": "## Wer fragt, wer antwortet?\n\n- Ein **Client** fragt einen Dienst an (z. B. dein **Browser**).\n- Ein **Server** stellt den Dienst bereit und antwortet (z. B. ein Webserver mit einer Webseite).\n\nDie Daten reisen in kleinen **Datenpaketen** durch das Netzwerk. Ein **Router** leitet diese Pakete zwischen Netzwerken weiter und sucht den Weg zum Ziel.\n\n## Protokolle\n\nEin **Protokoll** ist ein Satz Regeln für die Kommunikation. Im Web sind das vor allem:\n\n- **HTTP**: überträgt Webseiten.\n- **HTTPS**: dasselbe, aber **verschlüsselt** und sicher (das 'S' steht für *Secure*)."
     },
     {
       "id": "ex-match-netzwerk",

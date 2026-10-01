@@ -131,13 +131,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Gruppen und children",
-      "body": "# Inventory-Gruppen\n\nEin Inventory ordnet Hosts in **Gruppen**. In der INI-Form:\n\n```ini\n[webserver]\nweb1.example.com\nweb2.example.com\n\n[datenbank]\ndb1.example.com\n\n[produktion:children]\nwebserver\ndatenbank\n```\n\nDie Gruppe `produktion` enthält über **`children`** keine Hosts direkt, sondern andere **Gruppen** — und erbt deren Hosts. So entstehen **verschachtelte Gruppen**. Zusätzlich gibt es immer die Spezialgruppe **`all`** mit allen Hosts."
+      "body": "# Inventory-Gruppen\n\nEin Inventory ordnet Hosts in **Gruppen**. In der INI-Form:\n\n```ini\n[webserver]\nweb1.example.com\nweb2.example.com\n\n[datenbank]\ndb1.example.com\n\n[produktion:children]\nwebserver\ndatenbank\n```\n\nDie Gruppe `produktion` enthält über **`children`** keine Hosts direkt, sondern andere **Gruppen**, und erbt deren Hosts. So entstehen **verschachtelte Gruppen**. Zusätzlich gibt es immer die Spezialgruppe **`all`** mit allen Hosts."
     },
     {
       "id": "targeting",
       "type": "theory",
       "title": "Gezieltes hosts-Targeting",
-      "body": "## Wen spricht das Play an?\n\nDie **`hosts:`**-Zeile im Play wählt das Ziel — ein Host, eine Gruppe oder ein **Pattern**:\n\n| Pattern | Bedeutung |\n|---|---|\n| `webserver:datenbank` | Vereinigung (ODER) |\n| `all:!datenbank` | alle **außer** datenbank |\n| `webserver:&produktion` | Schnittmenge (in **beiden**) |\n\nZur Laufzeit beschränkst du den Lauf mit **`--limit`** (kurz `-l`), z. B. `ansible-playbook site.yml --limit web1` — praktisch, um einen Fix erst auf einem Host zu testen. Die Hierarchie prüfst du mit `ansible-inventory --graph`."
+      "body": "## Wen spricht das Play an?\n\nDie **`hosts:`**-Zeile im Play wählt das Ziel, ein Host, eine Gruppe oder ein **Pattern**:\n\n| Pattern | Bedeutung |\n|---|---|\n| `webserver:datenbank` | Vereinigung (ODER) |\n| `all:!datenbank` | alle **außer** datenbank |\n| `webserver:&produktion` | Schnittmenge (in **beiden**) |\n\nZur Laufzeit beschränkst du den Lauf mit **`--limit`** (kurz `-l`), z. B. `ansible-playbook site.yml --limit web1` - praktisch, um einen Fix erst auf einem Host zu testen. Die Hierarchie prüfst du mit `ansible-inventory --graph`."
     },
     {
       "id": "ex-cloze-children",
@@ -152,7 +152,7 @@
         "sentence": "[produktion:___]\nwebserver\ndatenbank",
         "blanks": [{"accept": ["children"]}],
         "cloze_mode": "type",
-        "hint": "Englisch für 'Kinder' — die Untergruppen einer Gruppe."
+        "hint": "Englisch für 'Kinder' - die Untergruppen einer Gruppe."
       }
     },
     {

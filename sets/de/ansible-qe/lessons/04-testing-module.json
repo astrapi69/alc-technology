@@ -1,7 +1,7 @@
 {
   "id": "04-testing-module",
   "title": "Testing-Module: assert, uri, command, shell",
-  "description": "Die für Quality Engineering wichtigsten Module: assert für Zusicherungen, uri für API-/HTTP-Tests, command und shell zum Ausführen von Programmen — inklusive der Unterschiede und des register/failed_when-Musters für Prüfungen.",
+  "description": "Die für Quality Engineering wichtigsten Module: assert für Zusicherungen, uri für API-/HTTP-Tests, command und shell zum Ausführen von Programmen, inklusive der Unterschiede und des register/failed_when-Musters für Prüfungen.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -65,8 +65,8 @@
       "id": "card-06",
       "stable_id": "card-ms942cfc01jmm",
       "front": "command",
-      "back": "Führt ein Programm direkt aus, OHNE Shell — sicherer, aber keine Pipes/Variablen",
-      "notes": "Kein |, >, $VAR oder * — dafür gibt es shell.",
+      "back": "Führt ein Programm direkt aus, OHNE Shell, sicherer, aber keine Pipes/Variablen",
+      "notes": "Kein |, >, $VAR oder *, dafür gibt es shell.",
       "media_type": "code",
       "code_snippet": "- ansible.builtin.command: systemctl is-active nginx",
       "code_language": "yaml",
@@ -77,7 +77,7 @@
       "id": "card-07",
       "stable_id": "card-ms942cfc01k2e",
       "front": "shell",
-      "back": "Führt einen Befehl über die Shell aus — erlaubt Pipes, Umleitungen, Variablen",
+      "back": "Führt einen Befehl über die Shell aus, erlaubt Pipes, Umleitungen, Variablen",
       "notes": "Mächtiger, aber anfälliger; nur nutzen, wenn command nicht reicht.",
       "media_type": "code",
       "code_snippet": "- ansible.builtin.shell: \"grep ERROR /var/log/app.log | wc -l\"",
@@ -109,7 +109,7 @@
       "id": "card-10",
       "stable_id": "card-ms942cfc01nh2",
       "front": "changed_when",
-      "back": "Steuert, wann ein Task als 'changed' gilt — wichtig bei command/shell",
+      "back": "Steuert, wann ein Task als 'changed' gilt, wichtig bei command/shell",
       "notes": "command/shell melden sonst immer 'changed'; changed_when: false markiert reine Prüfungen.",
       "media_type": "text",
       "difficulty": 3,
@@ -131,13 +131,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Module für Quality Engineering",
-      "body": "# Testing-relevante Module\n\nFür QA-Aufgaben sind vier Module zentral:\n\n- **assert** — formuliert Erwartungen (`that`) und lässt das Play scheitern, wenn sie nicht zutreffen.\n- **uri** — schickt HTTP-Anfragen und prüft `status_code`, Header und Inhalt (API- und Health-Checks).\n- **command** — führt ein Programm **ohne Shell** aus: sicher, aber **keine** Pipes, Umleitungen oder Variablen.\n- **shell** — führt über die Shell aus und erlaubt `|`, `>`, `$VAR` — mächtiger, aber anfälliger.\n\nFaustregel: **erst `command`, `shell` nur, wenn du echte Shell-Features brauchst.**"
+      "body": "# Testing-relevante Module\n\nFür QA-Aufgaben sind vier Module zentral:\n\n- **assert**: formuliert Erwartungen (`that`) und lässt das Play scheitern, wenn sie nicht zutreffen.\n- **uri**: schickt HTTP-Anfragen und prüft `status_code`, Header und Inhalt (API- und Health-Checks).\n- **command**: führt ein Programm **ohne Shell** aus: sicher, aber **keine** Pipes, Umleitungen oder Variablen.\n- **shell**: führt über die Shell aus und erlaubt `|`, `>`, `$VAR` - mächtiger, aber anfälliger.\n\nFaustregel: **erst `command`, `shell` nur, wenn du echte Shell-Features brauchst.**"
     },
     {
       "id": "muster",
       "type": "theory",
       "title": "Das register/assert-Muster",
-      "body": "## Ausgabe prüfen\n\nEin typischer Prüf-Ablauf: Befehl ausführen, Ergebnis **registrieren**, dann mit **assert** bewerten.\n\n```yaml\n- name: Dienst-Status holen\n  ansible.builtin.command: systemctl is-active nginx\n  register: nginx_status\n  changed_when: false        # reine Prüfung, nie 'changed'\n  failed_when: false         # nicht hart scheitern, selbst bewerten\n\n- name: Nginx muss laufen\n  ansible.builtin.assert:\n    that:\n      - nginx_status.stdout == \"active\"\n    fail_msg: \"Nginx läuft nicht!\"\n    success_msg: \"Nginx ist aktiv.\"\n```\n\nMerke: `command`/`shell` melden ohne `changed_when: false` **immer** `changed` — für reine Tests unerwünscht."
+      "body": "## Ausgabe prüfen\n\nEin typischer Prüf-Ablauf: Befehl ausführen, Ergebnis **registrieren**, dann mit **assert** bewerten.\n\n```yaml\n- name: Dienst-Status holen\n  ansible.builtin.command: systemctl is-active nginx\n  register: nginx_status\n  changed_when: false        # reine Prüfung, nie 'changed'\n  failed_when: false         # nicht hart scheitern, selbst bewerten\n\n- name: Nginx muss laufen\n  ansible.builtin.assert:\n    that:\n      - nginx_status.stdout == \"active\"\n    fail_msg: \"Nginx läuft nicht!\"\n    success_msg: \"Nginx ist aktiv.\"\n```\n\nMerke: `command`/`shell` melden ohne `changed_when: false` **immer** `changed` - für reine Tests unerwünscht."
     },
     {
       "id": "ex-match-module",
@@ -171,7 +171,7 @@
         "sentence": "- ansible.builtin.assert:\n    ___:\n      - result.status == 200",
         "blanks": [{"accept": ["that"]}],
         "cloze_mode": "type",
-        "hint": "Englisch für 'dass' — die Liste der Bedingungen, die alle wahr sein müssen."
+        "hint": "Englisch für 'dass' - die Liste der Bedingungen, die alle wahr sein müssen."
       }
     },
     {
@@ -217,7 +217,7 @@
         "prompt": "Welchen Parameter setzt du auf 'false', damit ein command-Task, der nur prüft, nicht fälschlich als 'changed' gilt?",
         "card_ids": ["card-10"],
         "accept": ["changed_when", "changed_when: false", "den Parameter changed_when"],
-        "hint": "command/shell melden sonst immer 'changed' — dieser Parameter steuert das.",
+        "hint": "command/shell melden sonst immer 'changed' - dieser Parameter steuert das.",
         "distractors": ["failed_when", "register", "status_code"],
         "direction": "source_to_target"
       }

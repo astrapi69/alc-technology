@@ -1,4 +1,4 @@
-# Wurzel-Manifest von alc-technology — die Technologie-Reihe.
+# Wurzel-Manifest von alc-technology - die Technologie-Reihe.
 #
 # Adaptive-Learner-Content-Repo für Technologie. Zwei deutschsprachige
 # Sets (domain: technology) nach aufsteigendem Niveau:
@@ -17,7 +17,7 @@
 #
 # Anleitung: docs/GETTING-STARTED.md
 schema_version: '1.5'
-name: Adaptive Learner — Technologie
+name: Adaptive Learner - Technologie
 description: >-
   Technologie-Inhalte für Adaptive Learner: IT-Grundlagen für
   Einsteiger und Ansible-Grundlagen für Quality Engineering, beide

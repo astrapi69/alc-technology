@@ -1,7 +1,7 @@
 {
   "id": "07-datenbanken-grundbegriffe",
   "title": "Datenbanken Grundbegriffe",
-  "description": "Die wichtigsten Begriffe rund um Datenbanken: Datenbank, Tabelle, SQL, Query, Primärschlüssel sowie Zeile und Spalte — auf Deutsch erklärt.",
+  "description": "Die wichtigsten Begriffe rund um Datenbanken: Datenbank, Tabelle, SQL, Query, Primärschlüssel sowie Zeile und Spalte, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -123,13 +123,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Datenbank, Tabelle, Zeile und Spalte",
-      "body": "# Datenbanken — Grundbegriffe\n\nEine **Datenbank** ist eine **strukturierte Sammlung von Daten**, die dauerhaft gespeichert und gezielt abgefragt werden kann. Verwaltet wird sie von einem **Datenbanksystem (DBMS)** wie MySQL oder PostgreSQL.\n\nIn einer **relationalen Datenbank** liegen die Daten in **Tabellen**:\n\n- Eine **Zeile (row)** ist ein einzelner **Datensatz** — z. B. ein Kunde.\n- Eine **Spalte (column)** ist ein **Merkmal** aller Datensätze — z. B. die E-Mail-Adresse.\n\n| Kundennr | Name | Stadt |\n|---|---|---|\n| 1 | Anna | Berlin |\n| 2 | Ben | Wien |\n\nHier ist jede Zeile ein Kunde, jede Spalte ein Merkmal."
+      "body": "# Datenbanken - Grundbegriffe\n\nEine **Datenbank** ist eine **strukturierte Sammlung von Daten**, die dauerhaft gespeichert und gezielt abgefragt werden kann. Verwaltet wird sie von einem **Datenbanksystem (DBMS)** wie MySQL oder PostgreSQL.\n\nIn einer **relationalen Datenbank** liegen die Daten in **Tabellen**:\n\n- Eine **Zeile (row)** ist ein einzelner **Datensatz**, z. B. ein Kunde.\n- Eine **Spalte (column)** ist ein **Merkmal** aller Datensätze, z. B. die E-Mail-Adresse.\n\n| Kundennr | Name | Stadt |\n|---|---|---|\n| 1 | Anna | Berlin |\n| 2 | Ben | Wien |\n\nHier ist jede Zeile ein Kunde, jede Spalte ein Merkmal."
     },
     {
       "id": "step-schluessel-sql",
       "type": "theory",
       "title": "Schlüssel und SQL",
-      "body": "## Schlüssel\n\nDer **Primärschlüssel (primary key)** ist eine Spalte, deren Wert **jede Zeile eindeutig** identifiziert — etwa eine Kundennummer. Ein **Fremdschlüssel (foreign key)** verweist auf den Primärschlüssel einer **anderen** Tabelle und verknüpft so die Tabellen.\n\n## SQL\n\n**SQL (Structured Query Language)** ist die Sprache, mit der man Datenbanken abfragt. Eine einzelne Anfrage heißt **Query (Abfrage)**. Der wichtigste Lesebefehl ist **SELECT**:\n\n```\nSELECT * FROM kunden;\n```\n\nDas liest alle Spalten (`*`) aus der Tabelle `kunden`."
+      "body": "## Schlüssel\n\nDer **Primärschlüssel (primary key)** ist eine Spalte, deren Wert **jede Zeile eindeutig** identifiziert, etwa eine Kundennummer. Ein **Fremdschlüssel (foreign key)** verweist auf den Primärschlüssel einer **anderen** Tabelle und verknüpft so die Tabellen.\n\n## SQL\n\n**SQL (Structured Query Language)** ist die Sprache, mit der man Datenbanken abfragt. Eine einzelne Anfrage heißt **Query (Abfrage)**. Der wichtigste Lesebefehl ist **SELECT**:\n\n```\nSELECT * FROM kunden;\n```\n\nDas liest alle Spalten (`*`) aus der Tabelle `kunden`."
     },
     {
       "id": "ex-match-db",

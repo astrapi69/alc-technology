@@ -1,7 +1,7 @@
 {
   "id": "05-variablen-facts-bedingungen",
   "title": "Variablen, Facts und Bedingungen",
-  "description": "Dynamische Playbooks: Variablen über vars definieren, automatisch gesammelte Facts nutzen, Werte mit der Jinja2-Syntax einsetzen und Tasks über when-Bedingungen steuern — die Basis für flexible Testszenarien.",
+  "description": "Dynamische Playbooks: Variablen über vars definieren, automatisch gesammelte Facts nutzen, Werte mit der Jinja2-Syntax einsetzen und Tasks über when-Bedingungen steuern, die Basis für flexible Testszenarien.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -80,7 +80,7 @@
       "stable_id": "card-ms942cfc020ui",
       "front": "when ohne {{ }}",
       "back": "In when-Ausdrücken stehen Variablen OHNE die geschweiften Klammern",
-      "notes": "when: app_port == 8080 — nicht when: {{ app_port }} == 8080.",
+      "notes": "when: app_port == 8080, nicht when: {{ app_port }} == 8080.",
       "media_type": "text",
       "difficulty": 3,
       "tags": ["bedingungen", "stolperstein"]
@@ -133,13 +133,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Variablen und Facts",
-      "body": "# Variablen, Facts und Bedingungen\n\nStatische Playbooks reichen selten. Mit **Variablen** machst du sie flexibel:\n\n- Eigene Variablen definierst du im **`vars`**-Block.\n- Eingesetzt werden sie mit **Jinja2**: `{{ variablenname }}`.\n\n**Facts** sind automatisch erhobene Systemdaten über die Managed Nodes — Betriebssystem, IP, CPU usw. Sie werden zu Play-Beginn gesammelt (`gather_facts: true`) und liegen unter `ansible_facts`, z. B. `{{ ansible_facts['distribution'] }}`."
+      "body": "# Variablen, Facts und Bedingungen\n\nStatische Playbooks reichen selten. Mit **Variablen** machst du sie flexibel:\n\n- Eigene Variablen definierst du im **`vars`**-Block.\n- Eingesetzt werden sie mit **Jinja2**: `{{ variablenname }}`.\n\n**Facts** sind automatisch erhobene Systemdaten über die Managed Nodes, Betriebssystem, IP, CPU usw. Sie werden zu Play-Beginn gesammelt (`gather_facts: true`) und liegen unter `ansible_facts`, z. B. `{{ ansible_facts['distribution'] }}`."
     },
     {
       "id": "bedingungen",
       "type": "theory",
       "title": "Bedingungen mit when",
-      "body": "## Tasks bedingt ausführen\n\nMit **`when`** läuft ein Task nur, wenn ein Ausdruck wahr ist:\n\n```yaml\n- name: Nur auf Ubuntu installieren\n  ansible.builtin.apt:\n    name: nginx\n    state: present\n  when: ansible_facts['distribution'] == \"Ubuntu\"\n```\n\nWichtiger Stolperstein: In `when` stehen Variablen **ohne** `{{ }}` — der Ausdruck wird ohnehin als Jinja2 ausgewertet. Mehrere Bedingungen verknüpfst du mit `and`/`or` oder als YAML-Liste (= logisches UND). Fehlende Variablen fängst du mit dem `default`-Filter ab: `{{ app_port | default(80) }}`."
+      "body": "## Tasks bedingt ausführen\n\nMit **`when`** läuft ein Task nur, wenn ein Ausdruck wahr ist:\n\n```yaml\n- name: Nur auf Ubuntu installieren\n  ansible.builtin.apt:\n    name: nginx\n    state: present\n  when: ansible_facts['distribution'] == \"Ubuntu\"\n```\n\nWichtiger Stolperstein: In `when` stehen Variablen **ohne** `{{ }}` - der Ausdruck wird ohnehin als Jinja2 ausgewertet. Mehrere Bedingungen verknüpfst du mit `and`/`or` oder als YAML-Liste (= logisches UND). Fehlende Variablen fängst du mit dem `default`-Filter ab: `{{ app_port | default(80) }}`."
     },
     {
       "id": "ex-cloze-jinja",
@@ -200,7 +200,7 @@
         "id": "ex-free-when-klammern",
         "stable_id": "ex-ms942cfc028s2",
         "type": "free_text",
-        "prompt": "Wie steht eine Variable in einem when-Ausdruck — MIT oder OHNE die geschweiften Klammern {{ }}?",
+        "prompt": "Wie steht eine Variable in einem when-Ausdruck, MIT oder OHNE die geschweiften Klammern {{ }}?",
         "card_ids": ["card-07"],
         "accept": ["Ohne", "Ohne die Klammern", "ohne {{ }}", "Ohne geschweifte Klammern"],
         "hint": "when wird ohnehin als Jinja2-Ausdruck ausgewertet.",

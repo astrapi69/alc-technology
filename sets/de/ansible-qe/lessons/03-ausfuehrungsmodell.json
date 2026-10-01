@@ -63,7 +63,7 @@
       "id": "card-06",
       "stable_id": "card-ms942cfb013ip",
       "front": "ok (Status)",
-      "back": "Der Task wurde geprüft, der Zustand war bereits korrekt — keine Änderung",
+      "back": "Der Task wurde geprüft, der Zustand war bereits korrekt, keine Änderung",
       "notes": "Zeigt, dass Idempotenz greift.",
       "media_type": "text",
       "difficulty": 2,
@@ -125,13 +125,13 @@
       "id": "intro",
       "type": "theory",
       "title": "Die zwei Achsen",
-      "body": "# Das Ausführungsmodell\n\nDer häufigste Denkfehler bei Einsteigern: Man verwechselt **Task-Sequenzialität** mit **Host-Parallelität**. Beides gilt gleichzeitig, aber auf unterschiedlichen Achsen.\n\n- **Pro Host, über die Tasks hinweg → sequenziell.** Auf *einem* Host läuft Task 1, dann Task 2, dann Task 3 — strikt der Reihe nach.\n- **Pro Task, über die Hosts hinweg → parallel.** *Ein* Task läuft gleichzeitig auf allen (bzw. bis zu `forks` vielen) Hosts.\n\nAnsible arbeitet also **Task für Task**: Es führt Task 1 auf allen Hosts aus, **wartet**, bis überall fertig (Synchronisationspunkt), und geht erst dann zu Task 2."
+      "body": "# Das Ausführungsmodell\n\nDer häufigste Denkfehler bei Einsteigern: Man verwechselt **Task-Sequenzialität** mit **Host-Parallelität**. Beides gilt gleichzeitig, aber auf unterschiedlichen Achsen.\n\n- **Pro Host, über die Tasks hinweg → sequenziell.** Auf *einem* Host läuft Task 1, dann Task 2, dann Task 3, strikt der Reihe nach.\n- **Pro Task, über die Hosts hinweg → parallel.** *Ein* Task läuft gleichzeitig auf allen (bzw. bis zu `forks` vielen) Hosts.\n\nAnsible arbeitet also **Task für Task**: Es führt Task 1 auf allen Hosts aus, **wartet**, bis überall fertig (Synchronisationspunkt), und geht erst dann zu Task 2."
     },
     {
       "id": "matrix",
       "type": "theory",
       "title": "Beispiel mit 3 Hosts, 2 Tasks",
-      "body": "## Was wann passiert\n\nInventory: `web1`, `web2`, `web3`. Play mit Task A und Task B.\n\n```\nTask A  →  web1 | web2 | web3   (parallel)\n          ─── alle fertig? ───   (warten)\nTask B  →  web1 | web2 | web3   (parallel)\n```\n\nWeb1 kommt also **nicht** zu Task B, bevor web2 und web3 mit Task A fertig sind.\n\nStellschrauben:\n\n- `forks` (Standard **5**): wie viele Hosts gleichzeitig.\n- `serial: 2`: Batch-Größe pro Play — verarbeitet die Hosts in Wellen (Rolling Update).\n- Fehler: Ein **failed** Host fällt nur für sich heraus, die übrigen laufen weiter — außer `any_errors_fatal: true`."
+      "body": "## Was wann passiert\n\nInventory: `web1`, `web2`, `web3`. Play mit Task A und Task B.\n\n```\nTask A  →  web1 | web2 | web3   (parallel)\n          ─── alle fertig? ───   (warten)\nTask B  →  web1 | web2 | web3   (parallel)\n```\n\nWeb1 kommt also **nicht** zu Task B, bevor web2 und web3 mit Task A fertig sind.\n\nStellschrauben:\n\n- `forks` (Standard **5**): wie viele Hosts gleichzeitig.\n- `serial: 2`: Batch-Größe pro Play, verarbeitet die Hosts in Wellen (Rolling Update).\n- Fehler: Ein **failed** Host fällt nur für sich heraus, die übrigen laufen weiter, außer `any_errors_fatal: true`."
     },
     {
       "id": "ex-free-kernfrage",
@@ -222,7 +222,7 @@
         "prompt": "Welchen Status sollte ein idempotenter Task beim ZWEITEN Lauf melden, wenn sich am Zielzustand nichts mehr ändert?",
         "card_ids": ["card-06", "card-07"],
         "accept": ["ok", "ok statt changed", "den Status ok"],
-        "hint": "Beim ersten Lauf war es 'changed' — beim zweiten sollte nichts mehr geändert werden.",
+        "hint": "Beim ersten Lauf war es 'changed' - beim zweiten sollte nichts mehr geändert werden.",
         "distractors": ["changed", "failed", "unreachable"],
         "direction": "source_to_target"
       }

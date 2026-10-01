@@ -1,7 +1,7 @@
 {
   "id": "06-kontrollstrukturen",
   "title": "Kontrollstrukturen",
-  "description": "Wie Programme Entscheidungen treffen und wiederholen: If/Else, For-Schleife, While-Schleife, Bedingung und boolescher Ausdruck — auf Deutsch erklärt.",
+  "description": "Wie Programme Entscheidungen treffen und wiederholen: If/Else, For-Schleife, While-Schleife, Bedingung und boolescher Ausdruck, auf Deutsch erklärt.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -11,7 +11,7 @@
       "id": "it-kontrollstruktur",
       "stable_id": "card-ms942cfh06aa8",
       "front": "Kontrollstruktur",
-      "back": "Ein Sprachmittel, das den Ablauf eines Programms steuert — etwa Entscheidungen oder Wiederholungen.",
+      "back": "Ein Sprachmittel, das den Ablauf eines Programms steuert, etwa Entscheidungen oder Wiederholungen.",
       "notes": "Die wichtigsten sind Verzweigungen (if/else) und Schleifen (for/while).",
       "media_type": "text",
       "difficulty": 2,
@@ -102,7 +102,7 @@
       "stable_id": "card-ms942cfh06jeu",
       "front": "Endlosschleife",
       "back": "Eine Schleife, deren Bedingung nie falsch wird und die daher nie von selbst endet.",
-      "notes": "Meist ein Fehler — das Programm 'hängt'.",
+      "notes": "Meist ein Fehler, das Programm 'hängt'.",
       "media_type": "text",
       "difficulty": 3,
       "tags": ["programmierung", "schleife", "fehler"]
@@ -129,7 +129,7 @@
       "id": "step-schleifen",
       "type": "theory",
       "title": "Wiederholen mit Schleifen",
-      "body": "## Schleifen\n\nEine **Schleife (loop)** wiederholt einen Code-Block. Es gibt zwei Hauptarten:\n\n| Schleife | Wiederholt … |\n|---|---|\n| **For-Schleife** | … eine im Voraus **bekannte Anzahl** von Malen (z. B. 1 bis 10) |\n| **While-Schleife** | … **solange** eine Bedingung wahr bleibt |\n\nVorsicht bei der While-Schleife: Wird die Bedingung **nie falsch**, entsteht eine **Endlosschleife** — das Programm hängt und endet nie von selbst."
+      "body": "## Schleifen\n\nEine **Schleife (loop)** wiederholt einen Code-Block. Es gibt zwei Hauptarten:\n\n| Schleife | Wiederholt … |\n|---|---|\n| **For-Schleife** | … eine im Voraus **bekannte Anzahl** von Malen (z. B. 1 bis 10) |\n| **While-Schleife** | … **solange** eine Bedingung wahr bleibt |\n\nVorsicht bei der While-Schleife: Wird die Bedingung **nie falsch**, entsteht eine **Endlosschleife**, das Programm hängt und endet nie von selbst."
     },
     {
       "id": "ex-match-kontroll",

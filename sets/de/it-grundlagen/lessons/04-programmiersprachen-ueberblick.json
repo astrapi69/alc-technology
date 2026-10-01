@@ -1,7 +1,7 @@
 {
   "id": "04-programmiersprachen-ueberblick",
   "title": "Programmiersprachen Überblick",
-  "description": "Was Code ist, der Unterschied zwischen Compiler und Interpreter, Quellcode und Syntax — ein Überblick auf Deutsch.",
+  "description": "Was Code ist, der Unterschied zwischen Compiler und Interpreter, Quellcode und Syntax, ein Überblick auf Deutsch.",
   "target_language": "de",
   "source_language": "de",
   "domain": "technology",
@@ -41,7 +41,7 @@
       "id": "it-syntax",
       "stable_id": "card-ms942cfg05cbp",
       "front": "Syntax",
-      "back": "Die Grammatikregeln einer Programmiersprache — wie der Code richtig geschrieben werden muss.",
+      "back": "Die Grammatikregeln einer Programmiersprache, wie der Code richtig geschrieben werden muss.",
       "notes": "Ein Fehler dagegen heißt 'Syntaxfehler' (SyntaxError).",
       "media_type": "text",
       "difficulty": 2,
@@ -62,7 +62,7 @@
       "stable_id": "card-ms942cfg05eb3",
       "front": "Interpreter",
       "back": "Ein Programm, das den Quellcode Zeile für Zeile liest und sofort ausführt.",
-      "notes": "Beispiel: Python wird typischerweise interpretiert — ohne separaten Kompilier-Schritt.",
+      "notes": "Beispiel: Python wird typischerweise interpretiert, ohne separaten Kompilier-Schritt.",
       "media_type": "text",
       "difficulty": 3,
       "tags": ["programmierung", "ausfuehrung"]
@@ -133,7 +133,7 @@
       "id": "intro",
       "type": "theory",
       "title": "Was ist Code?",
-      "body": "# Programmiersprachen — ein Überblick\n\nEine **Programmiersprache** ist eine formale Sprache, mit der wir einem Computer Anweisungen geben. Den geschriebenen Text nennt man **Code (Quelltext)**.\n\nDer ursprüngliche, von Menschen geschriebene und lesbare Code heißt **Quellcode (source code)**. Jede Sprache hat eine **Syntax** — also Grammatikregeln, wie der Code geschrieben werden muss. Hält man sich nicht daran, entsteht ein **Syntaxfehler**.\n\nEin fertiges **Programm** ist eine Sammlung solcher Anweisungen, die eine Aufgabe erledigt. Die schrittweise Idee dahinter — wie man ein Problem löst — nennt man **Algorithmus** (wie ein Kochrezept)."
+      "body": "# Programmiersprachen - ein Überblick\n\nEine **Programmiersprache** ist eine formale Sprache, mit der wir einem Computer Anweisungen geben. Den geschriebenen Text nennt man **Code (Quelltext)**.\n\nDer ursprüngliche, von Menschen geschriebene und lesbare Code heißt **Quellcode (source code)**. Jede Sprache hat eine **Syntax**, also Grammatikregeln, wie der Code geschrieben werden muss. Hält man sich nicht daran, entsteht ein **Syntaxfehler**.\n\nEin fertiges **Programm** ist eine Sammlung solcher Anweisungen, die eine Aufgabe erledigt. Die schrittweise Idee dahinter, wie man ein Problem löst, nennt man **Algorithmus** (wie ein Kochrezept)."
     },
     {
       "id": "step-uebersetzung",
