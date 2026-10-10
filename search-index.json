@@ -1,12 +1,12 @@
 {
   "repo": "astrapi69/alc-technology",
-  "generated": "2026-10-01T11:13:58Z",
+  "generated": "2026-10-10T07:13:45Z",
   "schema_version": "1.0",
   "sets": [
     {
       "id": "it-grundlagen-from-de",
       "name": "IT-Grundlagen",
-      "description": "Zehn Einführungslektionen in IT und Programmierung, auf Deutsch erklärt, von Hardware und Betriebssystemen bis zu Web-Grundlagen und IT-Sicherheit, mit den englischen Fachbegriffen in Klammern.",
+      "description": "Einführung in IT und Programmierung für Deutschsprachige (10 Lektionen): von Hardware, Betriebssystemen und Netzwerk-Grundlagen über Programmiersprachen, Variablen und Kontrollstrukturen bis zu Datenbanken, Versionsverwaltung (Git), Web-Grundlagen und IT-Sicherheit. Erklärt auf Deutsch, mit den englischen Fachbegriffen in Klammern. Sachthemen-Set (domain: technology).",
       "source_language": "de",
       "target_language": "de",
       "level": "a1",
@@ -23,12 +23,12 @@
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
-      "updated_at": "2026-10-01T11:13:43Z"
+      "updated_at": "2026-10-10T07:13:35Z"
     },
     {
       "id": "ansible-qe-from-de",
       "name": "Ansible-Grundlagen für Quality Engineering",
-      "description": "Ansible für Quality Engineering: acht Lektionen mit insgesamt 88 Karten, Theorieschritten und Übungen (matching, cloze, free_text, word_tiles) zu Playbooks, Testing-Modulen, Testumgebungen und Inventory-Targeting.",
+      "description": "Ansible für Quality Engineering, auf Deutsch (8 Lektionen): Grundkonzepte, YAML/Playbook-Struktur, das Ausführungsmodell (Task-Sequenzialität vs. Host-Parallelität), Testing-Module (assert, uri, command, shell), Variablen/Facts/Bedingungen, Testumgebungen aufsetzen und bereinigen, Inventory-Targeting sowie Handlers und Jinja2-Templates. 88 Karten mit Theorie und Übungen (matching, cloze, free_text, word_tiles). Sachthemen-Set (domain: technology).",
       "source_language": "de",
       "target_language": "de",
       "level": "b1",
@@ -46,7 +46,7 @@
       "ai_validated": false,
       "trust_level": 1,
       "book": null,
-      "updated_at": "2026-10-01T11:13:43Z"
+      "updated_at": "2026-10-10T07:13:35Z"
     }
   ],
   "total_lessons": 18,
