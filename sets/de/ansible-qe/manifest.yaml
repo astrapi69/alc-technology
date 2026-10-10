@@ -24,11 +24,6 @@ sets:
     path: sets/de/ansible-qe
     version: '1.0.0'
     lesson_count: 8
-    description: >-
-      Ansible für Quality Engineering: acht Lektionen mit insgesamt
-      88 Karten, Theorieschritten und Übungen (matching, cloze,
-      free_text, word_tiles) zu Playbooks, Testing-Modulen,
-      Testumgebungen und Inventory-Targeting.
     tags:
       - ansible
       - devops
